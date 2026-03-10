@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="ru" style="color-scheme: dark;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЛОСЬ 400 — Моторная лодка из ПНД | Вологда</title>
+  <meta name="description"
+    content="Моторная лодка ЛОСЬ 400 из ПНД-пластика. Производство Вологда. Грузоподъёмность 350 кг, 4 человека, мотор до 9,9 л.с. Гарантия 36 месяцев. Регистрация в ГИМС не нужна.">
+  <meta name="keywords"
+    content="лодка ПНД купить, моторная лодка Вологда, лодка из полиэтилена, лодка ЛОСЬ 400, лодка без регистрации ГИМС, купить лодку Северо-Запад">
+  <link rel="icon" type="image/png" href="favicon.png"><!-- ЗАМЕНИТЕ на ваш фавикон -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --dark: #111214;
+      --surface: #1a1c1f;
+      --border: #2a2d32;
+      --amber: #E8851A;
+      --white: #f0ede8;
+      --muted: #7a7d82;
+      --font-display: 'Bebas Neue', sans-serif;
+      --font-body: 'Montserrat', sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: #0a0a0a;
+    }
+
+    body {
+      background: #0a0a0a;
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 1000;
+      opacity: 0.5;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 48px;
+      background: rgba(10, 10, 10, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(42, 45, 50, 0.6);
+    }
+
+    /* ЛОГО — замените img src на путь к вашему логотипу */
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .nav-logo-img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .nav-logo-img-placeholder {
+      width: 40px;
+      height: 40px;
+      border: 1px dashed rgba(232, 133, 26, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8px;
+      color: rgba(232, 133, 26, 0.4);
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 1.2;
+      flex-shrink: 0;
+    }
+
+    .nav-logo-text {
+      font-family: var(--font-display);
+      font-size: 28px;
+      letter-spacing: 4px;
+      color: var(--amber);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--white);
+    }
+
+    .nav-cta {
+      background: var(--amber);
+      color: #0a0a0a !important;
+      padding: 10px 24px;
+      font-weight: 700 !important;
+      transition: background 0.2s !important;
+    }
+
+    .nav-cta:hover {
+      background: #f5991f !important;
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      background: #0a0a0a;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 80% at 70% 50%, rgba(232, 133, 26, 0.07) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 60% at 20% 80%, rgba(232, 133, 26, 0.03) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(232, 133, 26, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(232, 133, 26, 0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 140px 80px 100px 80px;
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .hero-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      width: 32px;
+      height: 1px;
+      background: var(--amber);
+      flex-shrink: 0;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(72px, 9vw, 120px);
+      line-height: 0.9;
+      letter-spacing: 2px;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .hero-title span {
+      color: var(--amber);
+      display: block;
+    }
+
+    .hero-subtitle {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 2.5vw, 32px);
+      letter-spacing: 6px;
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+
+    .hero-desc {
+      font-size: 15px;
+      color: rgba(240, 237, 232, 0.65);
+      max-width: 560px;
+      line-height: 1.8;
+      margin-bottom: 48px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--amber);
+      color: #0a0a0a;
+      padding: 16px 36px;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+      clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+    }
+
+    .btn-primary:hover {
+      background: #f5991f;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(232, 133, 26, 0.35);
+    }
+
+    .btn-secondary {
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: gap 0.2s;
+    }
+
+    .btn-secondary::after {
+      content: '→';
+      color: var(--amber);
+    }
+
+    .btn-secondary:hover {
+      gap: 16px;
+    }
+
+    .hero-right {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 40px 80px;
+    }
+
+    .boat-visual {
+      width: 100%;
+      max-width: 560px;
+      position: relative;
+    }
+
+    .boat-svg {
+      width: 100%;
+      filter: drop-shadow(0 20px 60px rgba(232, 133, 26, 0.2));
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+
+      33% {
+        transform: translateY(-10px) rotate(0.4deg);
+      }
+
+      66% {
+        transform: translateY(-5px) rotate(-0.2deg);
+      }
+    }
+
+    @keyframes glowPulse {
+
+      0%,
+      100% {
+        opacity: 0.25;
+        transform: translateX(-50%) scaleX(1);
+      }
+
+      50% {
+        opacity: 0.45;
+        transform: translateX(-50%) scaleX(1.15);
+      }
+    }
+
+    .boat-glow {
+      animation: glowPulse 6s ease-in-out infinite !important;
+    }
+
+    .boat-glow {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+      height: 40px;
+      background: radial-gradient(ellipse, rgba(232, 133, 26, 0.25) 0%, transparent 70%);
+      filter: blur(20px);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    /* ─── STATS BAR ─── */
+    .stats-bar {
+      background: #1a1c1f;
+      border-top: 1px solid #2a2d32;
+      border-bottom: 1px solid #2a2d32;
+      padding: 0 80px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .stat-item {
+      padding: 32px 24px;
+      border-right: 1px solid #2a2d32;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s;
+      background: #1a1c1f;
+    }
+
+    .stat-item:last-child {
+      border-right: none;
+    }
+
+    .stat-item::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--amber);
+      transform: scaleX(0);
+      transition: transform 0.3s;
+      transform-origin: left;
+    }
+
+    .stat-item:hover::before {
+      transform: scaleX(1);
+    }
+
+    .stat-item:hover {
+      background: rgba(232, 133, 26, 0.04);
+    }
+
+    .stat-value {
+      font-family: var(--font-display);
+      font-size: 42px;
+      letter-spacing: 2px;
+      color: var(--amber);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ─── SECTIONS ─── */
+    section {
+      padding: 100px 80px;
+    }
+
+    .section-tag {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-tag::before {
+      content: '';
+      width: 24px;
+      height: 1px;
+      background: var(--amber);
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(40px, 5vw, 64px);
+      letter-spacing: 2px;
+      line-height: 0.95;
+      margin-bottom: 20px;
+      color: var(--white);
+    }
+
+    .section-desc {
+      color: rgba(240, 237, 232, 0.55);
+      max-width: 560px;
+      line-height: 1.8;
+      margin-bottom: 60px;
+    }
+
+    /* ─── WHY ─── */
+    .why {
+      background: #111214;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: #2a2d32;
+      border: 1px solid #2a2d32;
+      margin-top: 60px;
+    }
+
+    .why-card {
+      background: #111214;
+      padding: 48px 36px;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s;
+    }
+
+    .why-card:hover {
+      background: #1a1c1f;
+    }
+
+    .why-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 0;
+      background: var(--amber);
+      transition: height 0.4s;
+    }
+
+    .why-card:hover::after {
+      height: 100%;
+    }
+
+    .why-num {
+      font-family: var(--font-display);
+      font-size: 80px;
+      color: rgba(232, 133, 26, 0.07);
+      line-height: 1;
+      margin-bottom: -20px;
+      letter-spacing: 2px;
+    }
+
+    .why-icon {
+      font-size: 28px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .why-title {
+      font-family: var(--font-display);
+      font-size: 26px;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+      color: var(--white);
+    }
+
+    .why-text {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* ─── SPECS ─── */
+    .specs {
+      background: #0a0a0a;
+    }
+
+    .specs-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .specs-table {
+      border: 1px solid #2a2d32;
+    }
+
+    .specs-row {
+      display: flex;
+      border-bottom: 1px solid #2a2d32;
+      transition: background 0.2s;
+      background: #0a0a0a;
+    }
+
+    .specs-row:last-child {
+      border-bottom: none;
+    }
+
+    .specs-row:hover {
+      background: rgba(232, 133, 26, 0.03);
+    }
+
+    .specs-key {
+      flex: 0 0 55%;
+      padding: 14px 20px;
+      font-size: 13px;
+      color: var(--muted);
+      border-right: 1px solid #2a2d32;
+      font-weight: 500;
+      background: #0a0a0a;
+    }
+
+    .specs-val {
+      flex: 1;
+      padding: 14px 20px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--white);
+      background: #0a0a0a;
+    }
+
+    .specs-highlight {
+      background: rgba(232, 133, 26, 0.05) !important;
+    }
+
+    .specs-highlight .specs-key {
+      background: transparent;
+    }
+
+    .specs-highlight .specs-val {
+      color: var(--amber);
+      background: transparent;
+    }
+
+    .specs-visual {
+      position: sticky;
+      top: 120px;
+    }
+
+    .specs-badge {
+      display: inline-block;
+      background: rgba(232, 133, 26, 0.1);
+      border: 1px solid rgba(232, 133, 26, 0.3);
+      color: var(--amber);
+      padding: 6px 16px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .no-reg-block {
+      border: 1px solid #2a2d32;
+      padding: 32px;
+      margin-top: 32px;
+      position: relative;
+      overflow: hidden;
+      background: #0a0a0a;
+    }
+
+    .no-reg-block::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(to right, var(--amber), transparent);
+    }
+
+    .no-reg-title {
+      font-family: var(--font-display);
+      font-size: 22px;
+      letter-spacing: 2px;
+      color: var(--amber);
+      margin-bottom: 12px;
+    }
+
+    .no-reg-text {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* ─── MODELS ─── */
+    .models {
+      background: #111214;
+    }
+
+    .models-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 60px;
+    }
+
+    .model-card {
+      border: 1px solid #2a2d32;
+      padding: 48px;
+      position: relative;
+      overflow: hidden;
+      background: #111214;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+
+    .model-card:hover {
+      border-color: var(--amber);
+      transform: translateY(-4px);
+    }
+
+    .model-card.featured {
+      border-color: rgba(232, 133, 26, 0.35);
+    }
+
+    .model-card.featured::before {
+      content: 'НОВИНКА';
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: var(--amber);
+      color: #0a0a0a;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      padding: 4px 12px;
+    }
+
+    .model-name {
+      font-family: var(--font-display);
+      font-size: 48px;
+      letter-spacing: 3px;
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .model-sub {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+
+    .model-features {
+      list-style: none;
+      margin-bottom: 36px;
+    }
+
+    .model-features li {
+      font-size: 13px;
+      color: rgba(240, 237, 232, 0.65);
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(42, 45, 50, 0.8);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .model-features li::before {
+      content: '—';
+      color: var(--amber);
+      flex-shrink: 0;
+    }
+
+    /* ─── GEO ─── */
+    .geo {
+      background: #0a0a0a;
+    }
+
+    .geo-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .geo-points {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+    }
+
+    .geo-point {
+      display: flex;
+      gap: 24px;
+      padding: 24px 0;
+      border-bottom: 1px solid #2a2d32;
+      align-items: flex-start;
+    }
+
+    .geo-point:last-child {
+      border-bottom: none;
+    }
+
+    .geo-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--amber);
+      flex-shrink: 0;
+      margin-top: 6px;
+      box-shadow: 0 0 12px rgba(232, 133, 26, 0.5);
+    }
+
+    .geo-point-title {
+      font-family: var(--font-display);
+      font-size: 20px;
+      letter-spacing: 2px;
+      margin-bottom: 4px;
+      color: var(--white);
+    }
+
+    .geo-point-text {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .geo-map {
+      aspect-ratio: 1;
+      border: 1px solid #2a2d32;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0a0a0a;
+    }
+
+    /* ─── CTA ─── */
+    .cta-section {
+      background: #1a1c1f;
+      border-top: 1px solid #2a2d32;
+      border-bottom: 1px solid #2a2d32;
+      text-align: center;
+      padding: 100px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: 'ЛОСЬ';
+      position: absolute;
+      font-family: var(--font-display);
+      font-size: 300px;
+      color: rgba(232, 133, 26, 0.03);
+      letter-spacing: 20px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    .cta-title {
+      font-family: var(--font-display);
+      font-size: clamp(48px, 6vw, 80px);
+      letter-spacing: 2px;
+      line-height: 0.95;
+      margin-bottom: 24px;
+      position: relative;
+      color: var(--white);
+    }
+
+    .cta-desc {
+      color: rgba(240, 237, 232, 0.55);
+      max-width: 480px;
+      margin: 0 auto 48px;
+      line-height: 1.8;
+      position: relative;
+    }
+
+    .cta-actions {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .cta-phone {
+      font-family: var(--font-display);
+      font-size: 28px;
+      letter-spacing: 3px;
+      color: var(--amber);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .cta-phone:hover {
+      opacity: 0.8;
+    }
+
+    /* ─── CONTACT ─── */
+    .contact {
+      background: #0a0a0a;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: #2a2d32;
+      border: 1px solid #2a2d32;
+      margin-top: 60px;
+    }
+
+    .contact-item {
+      background: #0a0a0a;
+      padding: 40px 36px;
+    }
+
+    .contact-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .contact-value {
+      font-family: var(--font-display);
+      font-size: 22px;
+      letter-spacing: 2px;
+      color: var(--white);
+      text-decoration: none;
+      transition: color 0.2s;
+      display: block;
+    }
+
+    a.contact-value:hover {
+      color: var(--amber);
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #111214;
+      border-top: 1px solid #2a2d32;
+      padding: 40px 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .footer-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-logo-img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+    }
+
+    .footer-logo-img-placeholder {
+      width: 36px;
+      height: 36px;
+      border: 1px dashed rgba(232, 133, 26, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 7px;
+      color: rgba(232, 133, 26, 0.3);
+      text-align: center;
+      line-height: 1.2;
+      flex-shrink: 0;
+    }
+
+    .footer-brand {
+      font-family: var(--font-display);
+      font-size: 22px;
+      letter-spacing: 4px;
+      color: var(--amber);
+    }
+
+    .footer-text {
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    .availability-bar {
+      background: rgba(232, 133, 26, 0.08);
+      border-top: 1px solid rgba(232, 133, 26, 0.2);
+      border-bottom: 1px solid rgba(232, 133, 26, 0.2);
+      padding: 14px 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+    }
+
+    .avail-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: var(--white);
+    }
+
+    .avail-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .avail-dot.green {
+      background: #4caf50;
+      box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+    }
+
+    .avail-dot.amber {
+      background: var(--amber);
+      box-shadow: 0 0 8px rgba(232, 133, 26, 0.6);
+    }
+
+    /* Соцсети */
+    .socials {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border: 1px solid #2a2d32;
+      padding: 8px 16px;
+      transition: all 0.2s;
+      background: #0a0a0a;
+    }
+
+    .social-link:hover {
+      border-color: var(--amber);
+      color: var(--amber);
+    }
+
+    .social-link svg {
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 1024px) {
+      .availability-bar {
+        padding: 12px 20px;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .socials {
+        flex-wrap: wrap;
+      }
+    }
+
+    /* ─── GALLERY ─── */
+    .gallery {
+      background: #0a0a0a;
+      padding: 80px 80px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      margin-top: 48px;
+      width: 100%;
+      height: 220px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      height: 220px;
+    }
+
+    .gallery-item img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transition: transform 0.5s ease, filter 0.3s ease;
+      filter: brightness(0.82) saturate(0.85);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+      filter: brightness(1) saturate(1.05);
+    }
+
+    .gallery-item::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(10, 10, 10, 0.4) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.95);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox.active {
+      display: flex;
+    }
+
+    .lightbox img {
+      max-width: 90vw;
+      max-height: 90vh;
+      object-fit: contain;
+      cursor: default;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 24px;
+      right: 32px;
+      font-size: 32px;
+      color: var(--muted);
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-family: sans-serif;
+      transition: color 0.2s;
+    }
+
+    .lightbox-close:hover {
+      color: var(--white);
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 40px;
+      color: var(--muted);
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-family: sans-serif;
+      transition: color 0.2s;
+      padding: 20px;
+      line-height: 1;
+    }
+
+    .lightbox-prev {
+      left: 16px;
+    }
+
+    .lightbox-next {
+      right: 16px;
+    }
+
+    .lightbox-prev:hover,
+    .lightbox-next:hover {
+      color: var(--amber);
+    }
+
+    @media (max-width: 1024px) {
+      .gallery {
+        padding: 64px 20px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        height: auto;
+      }
+
+      .gallery-item {
+        height: 140px;
+      }
+
+      .gallery-item:nth-child(1) {
+        grid-column: span 2;
+      }
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fade-up:nth-child(2) {
+      transition-delay: 0.1s;
+    }
+
+    .fade-up:nth-child(3) {
+      transition-delay: 0.2s;
+    }
+
+    .fade-up:nth-child(4) {
+      transition-delay: 0.3s;
+    }
+
+    .fade-up:nth-child(5) {
+      transition-delay: 0.4s;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      nav {
+        padding: 14px 20px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      section {
+        padding: 64px 20px;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 80px;
+      }
+
+      .hero-left {
+        padding: 60px 20px 40px;
+      }
+
+      .stats-bar {
+        padding: 0 20px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .stat-item:nth-child(4),
+      .stat-item:nth-child(5) {
+        border-top: 1px solid #2a2d32;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .specs-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .specs-visual {
+        position: static;
+      }
+
+      .models-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .geo-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .geo-map {
+        display: none;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 32px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">
+      <img src="logo.png" alt="ЛОСЬ 400" style="height:48px;width:auto;object-fit:contain;">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#specs">Характеристики</a></li>
+      <li><a href="#models">Модели</a></li>
+      <li><a href="#why">Преимущества</a></li>
+      <li><a href="#contact">Контакты</a></li>
+      <li><a href="tel:+79517437031" class="nav-cta">Заказать</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-left">
+      <div class="hero-eyebrow">Моторная лодка из ПНД</div>
+      <h1 class="hero-title">
+        ЛОСЬ
+        <span>400</span>
+      </h1>
+      <div class="hero-subtitle">ПНД · ВОЛОГДА</div>
+      <p class="hero-desc">
+        Моторная лодка из ПНД-пластика собственного производства.
+        Для тех, кто знает воду. Гарантия 36 месяцев — на корпус и швы.
+        Регистрация в ГИМС не нужна.
+      </p>
+
+      <div class="hero-actions">
+        <a href="tel:+79517437031" class="btn-primary">Позвонить и заказать</a>
+        <a href="#specs" class="btn-secondary">Характеристики</a>
+      </div>
+      <div style="margin-top:24px;" class="socials">
+        <!-- ЗАМЕНИТЕ # на ваши ссылки -->
+        <a href="https://vk.com/sigmaboat" class="social-link" target="_blank">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14C20.67 22 22 20.67 22 15.07V8.93C22 3.33 20.67 2 15.07 2zm3.08 13.5h-1.6c-.6 0-.79-.48-1.87-1.58-.94-.93-1.35-.93-1.35 0 0 .93-.23 1.58-1.85 1.58-2.72 0-5.42-2.38-5.42-7.21 0-1.29.36-2.57 1.04-3.62.24-.36.63-.57 1.06-.57h1.6c.48 0 .68.19.68.69l-.69 3.27c-.04.19.04.4.22.52.76.51 2.48-2.22 2.48-2.22.16-.28.45-.44.76-.44h1.74c.52 0 .65.26.52.78l-1.22 2.86c-.12.28 0 .48.28.72.93.79 2.83 2.93 2.83 4.16 0 .64-.47 1.06-.21 1.06z" />
+          </svg>
+          ВКонтакте
+        </a>
+        <a href="https://rutube.ru/channel/69554486/" class="social-link" target="_blank">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z" />
+          </svg>
+          Рутуб
+        </a>
+        <a href="https://www.avito.ru/brands/01b02a3b79e4ceaebb3f68aba9a1ef9f" class="social-link" target="_blank">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1 14H5c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h14c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1zm-5-7h-1V9h-2v2H9v2h2v2h2v-2h1v-2z" />
+          </svg>
+          Авито
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat-item fade-up">
+      <div class="stat-value">350</div>
+      <div class="stat-label">кг грузоподъёмность</div>
+    </div>
+    <div class="stat-item fade-up">
+      <div class="stat-value">4</div>
+      <div class="stat-label">человека на борту</div>
+    </div>
+    <div class="stat-item fade-up">
+      <div class="stat-value">45</div>
+      <div class="stat-label">км/ч скорость</div>
+    </div>
+    <div class="stat-item fade-up">
+      <div class="stat-value">36</div>
+      <div class="stat-label">месяцев гарантии</div>
+    </div>
+    <div class="stat-item fade-up">
+      <div class="stat-value">ПНД</div>
+      <div class="stat-label">материал корпуса</div>
+    </div>
+  </div>
+
+
+
+  <!-- STOCK -->
+  <section class="stock" id="stock">
+    <div class="section-tag">Наличие</div>
+    <h2 class="section-title">КАК КУПИТЬ</h2>
+    <p class="section-desc">Лодки продаются из наличия и под предзаказ. Уточняйте актуальный статус по телефону.</p>
+
+    <div class="stock-grid">
+      <div class="stock-card instock fade-up">
+        <div class="stock-status">
+          <div class="stock-dot green"></div>В наличии
+        </div>
+        <div class="stock-title">ЛОСЬ 400</div>
+        <div class="stock-sub">Базовая · Открытый корпус</div>
+        <p class="stock-desc">Готовые лодки на складе — забираете сразу. Приезжаете, смотрите вживую, оплачиваете и
+          уезжаете с лодкой в тот же день.</p>
+        <div class="stock-detail">
+          <div class="stock-detail-item">Осмотр на производстве перед оплатой</div>
+          <div class="stock-detail-item">Оплата в день получения — наличными, картой или СБП</div>
+          <div class="stock-detail-item">Самовывоз: г. Вологда, район Емельяново</div>
+          <div class="stock-detail-item">Паспорт изделия и договор купли-продажи в комплекте</div>
+        </div>
+        <a href="tel:+79517437031" class="btn-primary">Уточнить наличие</a>
+      </div>
+
+      <div class="stock-card preorder fade-up">
+        <div class="stock-status">
+          <div class="stock-dot amber"></div>Предзаказ
+        </div>
+        <div class="stock-title">ЛОСЬ 400</div>
+        <div class="stock-sub">Любая версия · Ваш цвет и опции</div>
+        <p class="stock-desc">Заказываете лодку под себя — выбираете цвет, комплектацию. Вносите аванс 30%, остаток —
+          при получении готовой лодки.</p>
+        <div class="stock-detail">
+          <div class="stock-detail-item">Аванс 30% при подписании договора подряда</div>
+          <div class="stock-detail-item">Выбор цвета корпуса и дополнительных опций</div>
+          <div class="stock-detail-item">Срок изготовления — по согласованию</div>
+          <div class="stock-detail-item">Остаток 70% — в день получения до передачи лодки</div>
+        </div>
+        <a href="tel:+79517437031" class="btn-primary">Оформить предзаказ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="why" id="why">
+    <div class="section-tag">Почему ЛОСЬ</div>
+    <h2 class="section-title">СДЕЛАНО<br>НА СЕВЕРЕ</h2>
+    <p class="section-desc">Каждая лодка собирается вручную на производстве в Вологде. Мы знаем, что такое северная вода
+      — и делаем лодки именно для неё.</p>
+    <div class="why-grid">
+      <div class="why-card fade-up">
+        <div class="why-num">01</div><span class="why-icon">⬡</span>
+        <div class="why-title">ПНД-ПЛАСТИК</div>
+        <p class="why-text">Корпус из листов полиэтилена низкого давления. Не гниёт, не ржавеет, не боится ударов о
+          камни и лёд. Материал, проверенный десятилетиями в северных условиях.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-num">02</div><span class="why-icon">◈</span>
+        <div class="why-title">БЕЗ РЕГИСТРАЦИИ</div>
+        <p class="why-text">Масса до 200 кг, мотор до 9,9 л.с. — регистрация в ГИМС не требуется. Купил, спустил на
+          воду, поехал. Без бумаг и очередей.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-num">03</div><span class="why-icon">◇</span>
+        <div class="why-title">ГАРАНТИЯ 36 МЕС.</div>
+        <p class="why-text">Три года на корпус и швы. Не полгода, не год — три года. Если что-то пойдёт не так по нашей
+          вине, устраним за свой счёт в Вологде.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-num">04</div><span class="why-icon">⬟</span>
+        <div class="why-title">СВОЁ ПРОИЗВОДСТВО</div>
+        <p class="why-text">Не перекупщики. Мы производитель. Нарезка, сборка, контроль качества — всё у нас. Цена без
+          посредников.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-num">05</div><span class="why-icon">◉</span>
+        <div class="why-title">ФИКСИРОВАННАЯ ЦЕНА</div>
+        <p class="why-text">Цена назначена — и она не меняется в процессе. Никаких «доплат» и скрытых опций. Сказали —
+          сделали.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-num">06</div><span class="why-icon">△</span>
+        <div class="why-title">САМОВЫВОЗ ВОЛОГДА</div>
+        <p class="why-text">Забираете сами с производства в районе Емельяново. Смотрите вживую, проверяете перед
+          получением. Никаких сюрпризов.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECS -->
+  <section class="specs" id="specs">
+    <div class="specs-layout">
+      <div>
+        <div class="section-tag">Характеристики</div>
+        <h2 class="section-title">ЛОСЬ 400</h2>
+        <p class="section-desc">Базовая версия. Открытый корпус, полная комплектация, готова к воде.</p>
+        <div class="specs-table">
+          <div class="specs-row"><span class="specs-key">Длина габаритная</span><span class="specs-val">4,00 м</span>
+          </div>
+          <div class="specs-row"><span class="specs-key">Ширина габаритная</span><span class="specs-val">1,43 м</span>
+          </div>
+          <div class="specs-row"><span class="specs-key">Высота борта</span><span class="specs-val">0,65 м</span></div>
+          <div class="specs-row specs-highlight"><span class="specs-key">Грузоподъёмность</span><span
+              class="specs-val">350 кг</span></div>
+          <div class="specs-row specs-highlight"><span class="specs-key">Вместимость</span><span class="specs-val">4
+              человека</span></div>
+          <div class="specs-row"><span class="specs-key">Масса пустого судна</span><span class="specs-val">100 кг</span>
+          </div>
+          <div class="specs-row"><span class="specs-key">Осадка</span><span class="specs-val">0,15 м</span></div>
+          <div class="specs-row specs-highlight"><span class="specs-key">Мотор (макс.)</span><span class="specs-val">9,9
+              л.с. / 7,3 кВт</span></div>
+          <div class="specs-row"><span class="specs-key">Скорость макс.</span><span class="specs-val">45 км/ч</span>
+          </div>
+          <div class="specs-row"><span class="specs-key">Материал корпуса</span><span class="specs-val">ПНД-100</span>
+          </div>
+          <div class="specs-row"><span class="specs-key">Район плавания</span><span class="specs-val">IV (ТР ТС
+              026/2012)</span></div>
+          <div class="specs-row"><span class="specs-key">Удаление от берега</span><span class="specs-val">до 1,6
+              мили</span></div>
+          <div class="specs-row specs-highlight"><span class="specs-key">Регистрация ГИМС</span><span
+              class="specs-val">Не требуется</span></div>
+          <div class="specs-row specs-highlight"><span class="specs-key">Гарантия</span><span class="specs-val">36
+              месяцев</span></div>
+        </div>
+      </div>
+      <div class="specs-visual">
+        <div class="specs-badge">Базовая комплектация</div>
+        <div class="specs-table">
+          <div class="specs-row"><span class="specs-key">Рундук кормовой</span><span class="specs-val">1 шт.</span>
+          </div>
+          <div class="specs-row"><span class="specs-key">Рундук носовой</span><span class="specs-val">1 шт.</span></div>
+          <div class="specs-row"><span class="specs-key">Рундук под якорь</span><span class="specs-val">1 шт.</span>
+          </div>
+          <div class="specs-row"><span class="specs-key">Боковые карманы</span><span class="specs-val">2 шт.</span>
+          </div>
+          <div class="specs-row"><span class="specs-key">Лавка центральная</span><span class="specs-val">1 шт.
+              (съёмная)</span></div>
+          <div class="specs-row"><span class="specs-key">Вёсла</span><span class="specs-val">2 шт.</span></div>
+          <div class="specs-row"><span class="specs-key">Транцевая доска</span><span class="specs-val">влагостойкая
+              фанера</span></div>
+          <div class="specs-row"><span class="specs-key">Шпигаты</span><span class="specs-val">3 шт.</span></div>
+          <div class="specs-row"><span class="specs-key">Закладные под эхолот</span><span class="specs-val">2 шт.</span>
+          </div>
+          <div class="specs-row"><span class="specs-key">Подуключины</span><span class="specs-val">2 шт.</span></div>
+          <div class="specs-row"><span class="specs-key">Такелажная скоба (нос)</span><span class="specs-val">1
+              шт.</span></div>
+        </div>
+        <div class="no-reg-block">
+          <div class="no-reg-title">БЕЗ РЕГИСТРАЦИИ В ГИМС</div>
+          <p class="no-reg-text">ЛОСЬ 400 не подлежит обязательной регистрации: масса до 200 кг, мощность мотора до 8
+            кВт включительно. Можно эксплуатировать сразу после покупки.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODELS -->
+  <section class="models" id="models">
+    <div class="section-tag">Линейка</div>
+    <h2 class="section-title">ДВЕ МОДЕЛИ</h2>
+    <p class="section-desc">Выбирайте исходя из задач. Оба варианта — собственное производство, одни материалы и
+      стандарты качества.</p>
+    <div style="display:flex;gap:24px;margin-bottom:0;flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:10px;font-size:13px;">
+        <div
+          style="width:8px;height:8px;border-radius:50%;background:#4caf50;box-shadow:0 0 8px rgba(76,175,80,0.5);flex-shrink:0;">
+        </div><span style="color:var(--muted);">Базовая версия — <strong style="color:var(--white);">в
+            наличии</strong></span>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;font-size:13px;">
+        <div
+          style="width:8px;height:8px;border-radius:50%;background:var(--amber);box-shadow:0 0 8px rgba(232,133,26,0.5);flex-shrink:0;">
+        </div><span style="color:var(--muted);">Капитан — <strong style="color:var(--white);">предзаказ</strong></span>
+      </div>
+    </div>
+    <div class="models-grid">
+      <div class="model-card fade-up">
+        <div class="model-name">ЛОСЬ 400</div>
+        <div class="model-sub">Базовая · Открытый корпус</div>
+        <ul class="model-features">
+          <li>Масса 100 кг, грузоподъёмность 350 кг</li>
+          <li>Мотор до 9,9 л.с. / 7,3 кВт</li>
+          <li>Скорость до 45 км/ч</li>
+          <li>4 человека на борту</li>
+          <li>Регистрация ГИМС не нужна</li>
+          <li>Полная базовая комплектация</li>
+        </ul>
+        <a href="tel:+79517437031" class="btn-primary">Узнать цену</a>
+      </div>
+      <div class="model-card featured fade-up">
+        <div class="model-name">ЛОСЬ 400</div>
+        <div class="model-sub">Капитан · С рубкой</div>
+        <ul class="model-features">
+          <li>Масса 130 кг, грузоподъёмность 300 кг</li>
+          <li>Мотор до 9,9 л.с. / 7,3 кВт</li>
+          <li>Скорость до 50 км/ч</li>
+          <li>4 человека на борту</li>
+          <li>Закрытая рубка для защиты от непогоды</li>
+          <li>Расширенная комплектация</li>
+        </ul>
+        <a href="tel:+79517437031" class="btn-primary">Узнать цену</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GEO -->
+  <section class="geo" id="geography">
+    <div class="geo-inner">
+      <div>
+        <div class="section-tag">Где работаем</div>
+        <h2 class="section-title">ПРОИЗВОДСТВО<br>В ВОЛОГДЕ</h2>
+        <p class="section-desc">Завод находится в Вологде, район Емельяново. Самовывоз — лично смотрите лодку перед
+          получением.</p>
+        <div class="geo-points">
+          <div class="geo-point fade-up">
+            <div class="geo-dot"></div>
+            <div>
+              <div class="geo-point-title">ПРОИЗВОДСТВО</div>
+              <p class="geo-point-text">г. Вологда, район Емельяново. Забираете лично с завода — осматриваете изделие на
+                месте.</p>
+            </div>
+          </div>
+          <div class="geo-point fade-up">
+            <div class="geo-dot"></div>
+            <div>
+              <div class="geo-point-title">САМОВЫВОЗ</div>
+              <p class="geo-point-text">По предварительному согласованию даты и времени. Звоните — договоримся.</p>
+            </div>
+          </div>
+          <div class="geo-point fade-up">
+            <div class="geo-dot"></div>
+            <div>
+              <div class="geo-point-title">СЕВЕРО-ЗАПАД</div>
+              <p class="geo-point-text">Вологда — удобная точка для покупателей со всего Северо-Запада. Рядом трассы М8,
+                А119.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="geo-map">
+        <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg"
+          style="width:100%;height:100%;padding:40px;">
+          <circle cx="200" cy="200" r="160" stroke="rgba(42,45,50,0.8)" stroke-width="1" fill="none" />
+          <circle cx="200" cy="200" r="120" stroke="rgba(42,45,50,0.5)" stroke-width="1" fill="none"
+            stroke-dasharray="4 8" />
+          <circle cx="200" cy="200" r="80" stroke="rgba(42,45,50,0.3)" stroke-width="1" fill="none"
+            stroke-dasharray="2 10" />
+          <line x1="40" y1="200" x2="360" y2="200" stroke="rgba(42,45,50,0.4)" stroke-width="1" />
+          <line x1="200" y1="40" x2="200" y2="360" stroke="rgba(42,45,50,0.4)" stroke-width="1" />
+          <circle cx="200" cy="185" r="6" fill="#E8851A" />
+          <circle cx="200" cy="185" r="12" stroke="#E8851A" stroke-width="1" fill="none" opacity="0.5" />
+          <circle cx="200" cy="185" r="20" stroke="#E8851A" stroke-width="1" fill="none" opacity="0.2" />
+          <circle cx="200" cy="185" r="30" stroke="#E8851A" stroke-width="0.5" fill="none" opacity="0.1" />
+          <text x="215" y="180" font-family="'Bebas Neue',sans-serif" font-size="16" fill="#E8851A"
+            letter-spacing="2">ВОЛОГДА</text>
+          <line x1="200" y1="185" x2="140" y2="240" stroke="rgba(232,133,26,0.2)" stroke-width="1"
+            stroke-dasharray="3 5" />
+          <circle cx="140" cy="240" r="3" fill="rgba(232,133,26,0.3)" />
+          <line x1="200" y1="185" x2="260" y2="150" stroke="rgba(232,133,26,0.2)" stroke-width="1"
+            stroke-dasharray="3 5" />
+          <circle cx="260" cy="150" r="3" fill="rgba(232,133,26,0.3)" />
+          <line x1="200" y1="185" x2="130" y2="140" stroke="rgba(232,133,26,0.2)" stroke-width="1"
+            stroke-dasharray="3 5" />
+          <circle cx="130" cy="140" r="3" fill="rgba(232,133,26,0.3)" />
+          <text x="150" y="255" font-family="'Montserrat',sans-serif" font-size="9"
+            fill="rgba(122,125,130,0.7)">Ярославль</text>
+          <text x="265" y="148" font-family="'Montserrat',sans-serif" font-size="9"
+            fill="rgba(122,125,130,0.7)">Архангельск</text>
+          <text x="80" y="138" font-family="'Montserrat',sans-serif" font-size="9"
+            fill="rgba(122,125,130,0.7)">Петербург</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="section-tag">Фотогалерея</div>
+    <h2 class="section-title">ЛОСЬ 400<br>В ДЕЛЕ</h2>
+    <p class="section-desc">Реальные фото с испытаний и выездов. Без рендеров и фотошопа — только настоящая лодка на
+      настоящей воде.</p>
+
+    <div class="gallery-grid">
+      <div class="gallery-item" onclick="openLightbox(0)"><img src="photo1.jpg" alt="ЛОСЬ 400 на воде"></div>
+      <div class="gallery-item" onclick="openLightbox(1)"><img src="photo2.jpg" alt="ЛОСЬ 400 с мотором"></div>
+      <div class="gallery-item" onclick="openLightbox(2)"><img src="photo3.jpg" alt="ЛОСЬ 400 на ходу"></div>
+      <div class="gallery-item" onclick="openLightbox(3)"><img src="photo4.jpg" alt="ЛОСЬ 400 на производстве"></div>
+      <div class="gallery-item" onclick="openLightbox(4)"><img src="photo5.jpg" alt="ЛОСЬ 400 закат"></div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox()">×</button>
+    <button class="lightbox-prev" onclick="event.stopPropagation();prevPhoto()">‹</button>
+    <img id="lightbox-img" src="" alt="">
+    <button class="lightbox-next" onclick="event.stopPropagation();nextPhoto()">›</button>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2 class="cta-title">ГОТОВЫ ЗАКАЗАТЬ<br><span style="color:var(--amber)">СВОЙ ЛОСЬ?</span></h2>
+    <p class="cta-desc">Позвоните — обсудим комплектацию, цвет, сроки. Работаем без давления. Цена фиксирована.</p>
+    <div class="cta-actions">
+      <a href="tel:+79517437031" class="btn-primary" style="font-size:15px;padding:20px 48px;">Позвонить сейчас</a>
+      <a href="tel:+79517437031" class="cta-phone">8 (951) 743-70-31</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-tag">Контакты</div>
+    <h2 class="section-title">СВЯЖИТЕСЬ<br>С НАМИ</h2>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="contact-label">Телефон</div>
+        <a href="tel:+79517437031" class="contact-value">8 (951) 743-70-31</a>
+        <div style="margin-top:8px;font-size:12px;color:var(--muted);">Максим — руководитель производства</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">Производство / Самовывоз</div>
+        <span class="contact-value" style="font-size:18px;">г. Вологда, район Емельяново</span>
+        <div style="margin-top:8px;font-size:12px;color:var(--muted);">По предварительному согласованию</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-logo-wrap">
+      <img src="logo.png" alt="ЛОСЬ 400" style="height:52px;width:auto;object-fit:contain;">
+    </div>
+    <div class="footer-text">
+      © 2026 ООО «Вологодский Судостроительный Завод»<br>
+      Моторные лодки из ПНД-пластика · Производство Вологда
+    </div>
+    <div class="socials">
+      <a href="https://vk.com/sigmaboat" class="social-link" target="_blank">ВКонтакте</a>
+      <a href="https://rutube.ru/channel/69554486/" class="social-link" target="_blank">Рутуб</a>
+      <a href="https://www.avito.ru/brands/01b02a3b79e4ceaebb3f68aba9a1ef9f" class="social-link"
+        target="_blank">Авито</a>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    function animateCounter(el, target) {
+      let current = 0;
+      const step = target / 40;
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { current = target; clearInterval(timer); }
+        el.textContent = Math.floor(current);
+      }, 30);
+    }
+
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const values = entry.target.querySelectorAll('.stat-value');
+          const data = [350, 4, 45, 36, null];
+          values.forEach((el, i) => { if (data[i]) animateCounter(el, data[i]); });
+          statsObserver.disconnect();
+        }
+      });
+    }, { threshold: 0.5 });
+
+    const statsBar = document.querySelector('.stats-bar');
+    if (statsBar) statsObserver.observe(statsBar);
+
+    // Lightbox
+    const photos = ['photo1.jpg', 'photo2.jpg', 'photo3.jpg', 'photo4.jpg', 'photo5.jpg'];
+    let currentPhoto = 0;
+
+    function openLightbox(index) {
+      currentPhoto = index;
+      document.getElementById('lightbox-img').src = photos[index];
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      if (!e || e.target === document.getElementById('lightbox') || e.target.classList.contains('lightbox-close')) {
+        document.getElementById('lightbox').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function prevPhoto() {
+      currentPhoto = (currentPhoto - 1 + photos.length) % photos.length;
+      document.getElementById('lightbox-img').src = photos[currentPhoto];
+    }
+
+    function nextPhoto() {
+      currentPhoto = (currentPhoto + 1) % photos.length;
+      document.getElementById('lightbox-img').src = photos[currentPhoto];
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLightbox({ target: document.getElementById('lightbox') });
+      if (e.key === 'ArrowLeft') prevPhoto();
+      if (e.key === 'ArrowRight') nextPhoto();
+    });
+
+  </script>
+</body>
