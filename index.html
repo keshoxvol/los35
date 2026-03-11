@@ -3,13 +3,74 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=107267399', 'ym');
+    ym(107267399, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/107267399" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ЛОСЬ 400 — Моторная лодка из ПНД | Вологда</title>
   <meta name="description"
     content="Моторная лодка ЛОСЬ 400 из ПНД-пластика. Производство Вологда. Грузоподъёмность 350 кг, 4 человека, мотор до 9,9 л.с. Гарантия 36 месяцев. Регистрация в ГИМС не нужна.">
   <meta name="keywords"
     content="лодка ПНД купить, моторная лодка Вологда, лодка из полиэтилена, лодка ЛОСЬ 400, лодка без регистрации ГИМС, купить лодку Северо-Запад">
-  <link rel="icon" type="image/png" href="favicon.png"><!-- ЗАМЕНИТЕ на ваш фавикон -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="robots" content="index, follow">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Моторная лодка ЛОСЬ 400",
+    "description": "Моторная лодка из ПНД-пластика собственного производства. Грузоподъёмность 350 кг, 4 человека, мотор до 9,9 л.с. Регистрация в ГИМС не нужна.",
+    "brand": {
+      "@type": "Brand",
+      "name": "ЛОСЬ 400"
+    },
+    "manufacturer": {
+      "@type": "Organization",
+      "name": "ООО «Вологодский Судостроительный Завод»",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Вологда",
+        "addressRegion": "Вологодская область",
+        "addressCountry": "RU"
+      },
+      "telephone": "+78172263277"
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "ЛОСЬ 400 — базовая",
+        "price": "140000",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "ООО «Вологодский Судостроительный Завод»"
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "ЛОСЬ 400 Сохатый — с рубкой",
+        "price": "180000",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/PreOrder",
+        "seller": {
+          "@type": "Organization",
+          "name": "ООО «Вологодский Судостроительный Завод»"
+        }
+      }
+    ],
+    "warranty": "36 месяцев на корпус и сварные швы"
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap"
     rel="stylesheet">
@@ -148,7 +209,8 @@
     .hero {
       background: #0a0a0a;
       min-height: 100vh;
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       align-items: center;
       position: relative;
       overflow: hidden;
@@ -178,11 +240,9 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 140px 80px 100px 80px;
+      padding: 140px 60px 100px 80px;
       position: relative;
       z-index: 2;
-      width: 100%;
-      max-width: 800px;
     }
 
     .hero-eyebrow {
@@ -786,6 +846,55 @@
       background: #0a0a0a;
     }
 
+    /* ─── FAQ ─── */
+    .faq { padding: 100px 48px; max-width: 860px; margin: 0 auto; }
+    .faq-list { margin-top: 48px; display: flex; flex-direction: column; gap: 2px; }
+    .faq-item { border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+    .faq-q {
+      width: 100%; background: var(--surface); border: none; color: var(--white);
+      font-family: var(--font-body); font-size: 15px; font-weight: 600;
+      padding: 20px 24px; text-align: left; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center; gap: 16px;
+      transition: background 0.2s;
+    }
+    .faq-q:hover { background: #20232a; }
+    .faq-q .faq-icon { color: var(--amber); font-size: 22px; flex-shrink: 0; transition: transform 0.3s; line-height:1; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a {
+      max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease;
+      background: var(--dark); color: #b0b3b8; font-size: 14px; line-height: 1.7;
+      padding: 0 24px;
+    }
+    .faq-item.open .faq-a { max-height: 300px; padding: 16px 24px 20px; }
+
+    /* ─── LEAD FORM ─── */
+    .lead-form-section { padding: 100px 48px; background: var(--surface); }
+    .lead-form-inner { max-width: 640px; margin: 0 auto; }
+    .lead-form { display: flex; flex-direction: column; gap: 16px; margin-top: 40px; }
+    .lead-form input, .lead-form select, .lead-form textarea {
+      background: var(--dark); border: 1px solid var(--border); border-radius: 4px;
+      color: var(--white); font-family: var(--font-body); font-size: 15px;
+      padding: 14px 18px; outline: none; transition: border-color 0.2s; width: 100%;
+    }
+    .lead-form input::placeholder, .lead-form textarea::placeholder { color: var(--muted); }
+    .lead-form input:focus, .lead-form select:focus, .lead-form textarea:focus { border-color: var(--amber); }
+    .lead-form select option { background: var(--dark); }
+    .lead-form textarea { resize: vertical; min-height: 90px; }
+    .lead-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .lead-form-submit {
+      background: var(--amber); color: #000; font-family: var(--font-display);
+      font-size: 18px; letter-spacing: 1px; border: none; border-radius: 4px;
+      padding: 18px 32px; cursor: pointer; transition: opacity 0.2s; margin-top: 8px;
+    }
+    .lead-form-submit:hover { opacity: 0.88; }
+    .lead-form-submit:disabled { opacity: 0.5; cursor: not-allowed; }
+    .lead-form-note { font-size: 12px; color: var(--muted); margin-top: 12px; text-align: center; }
+    .lead-form-success {
+      display: none; text-align: center; padding: 32px; color: var(--amber);
+      font-family: var(--font-display); font-size: 22px; letter-spacing: 1px;
+    }
+    .lead-form-error { font-size: 13px; color: #e05a5a; margin-top: 4px; display: none; }
+
     /* ─── CTA ─── */
     .cta-section {
       background: #1a1c1f;
@@ -1202,11 +1311,16 @@
 
       .hero {
         min-height: auto;
+        grid-template-columns: 1fr;
         padding-top: 80px;
       }
 
       .hero-left {
-        padding: 60px 20px 40px;
+        padding: 60px 20px 32px;
+      }
+
+      .hero-right {
+        padding: 0 20px 60px;
       }
 
       .stats-bar {
@@ -1269,8 +1383,9 @@
       <li><a href="#specs">Характеристики</a></li>
       <li><a href="#models">Модели</a></li>
       <li><a href="#why">Преимущества</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Контакты</a></li>
-      <li><a href="tel:+79517437031" class="nav-cta">Заказать</a></li>
+      <li><a href="#order" class="nav-cta">Оставить заявку</a></li>
     </ul>
   </nav>
 
@@ -1293,7 +1408,7 @@
       </p>
 
       <div class="hero-actions">
-        <a href="tel:+79517437031" class="btn-primary">Позвонить и заказать</a>
+        <a href="tel:+78172263277" class="btn-primary">Позвонить и заказать</a>
         <a href="#specs" class="btn-secondary">Характеристики</a>
       </div>
       <div style="margin-top:24px;" class="socials">
@@ -1318,6 +1433,14 @@
           </svg>
           Авито
         </a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="boat-visual">
+        <div style="border-radius:8px;overflow:hidden;aspect-ratio:16/9;box-shadow:0 20px 60px rgba(232,133,26,0.2);">
+          <iframe width="100%" height="100%" src="https://rutube.ru/play/embed/c8b73a6c02b31308fd32880849a5bde8" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen style="border:none;display:block;"></iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -1369,7 +1492,7 @@
           <div class="stock-detail-item">Самовывоз: г. Вологда, район Емельяново</div>
           <div class="stock-detail-item">Паспорт изделия и договор купли-продажи в комплекте</div>
         </div>
-        <a href="tel:+79517437031" class="btn-primary">Уточнить наличие</a>
+        <a href="tel:+78172263277" class="btn-primary">Уточнить наличие</a>
       </div>
 
       <div class="stock-card preorder fade-up">
@@ -1386,7 +1509,7 @@
           <div class="stock-detail-item">Срок изготовления — по согласованию</div>
           <div class="stock-detail-item">Остаток 70% — в день получения до передачи лодки</div>
         </div>
-        <a href="tel:+79517437031" class="btn-primary">Оформить предзаказ</a>
+        <a href="tel:+78172263277" class="btn-primary">Оформить предзаказ</a>
       </div>
     </div>
   </section>
@@ -1520,7 +1643,7 @@
       <div style="display:flex;align-items:center;gap:10px;font-size:13px;">
         <div
           style="width:8px;height:8px;border-radius:50%;background:var(--amber);box-shadow:0 0 8px rgba(232,133,26,0.5);flex-shrink:0;">
-        </div><span style="color:var(--muted);">Капитан — <strong style="color:var(--white);">предзаказ</strong></span>
+        </div><span style="color:var(--muted);">Сохатый — <strong style="color:var(--white);">предзаказ</strong></span>
       </div>
     </div>
     <div class="models-grid">
@@ -1535,11 +1658,11 @@
           <li>Регистрация ГИМС не нужна</li>
           <li>Полная базовая комплектация</li>
         </ul>
-        <a href="tel:+79517437031" class="btn-primary">Узнать цену</a>
+        <a href="tel:+78172263277" class="btn-primary">Узнать цену</a>
       </div>
       <div class="model-card featured fade-up">
         <div class="model-name">ЛОСЬ 400</div>
-        <div class="model-sub">Капитан · С рубкой</div>
+        <div class="model-sub">Сохатый · С рубкой</div>
         <ul class="model-features">
           <li>Масса 130 кг, грузоподъёмность 300 кг</li>
           <li>Мотор до 9,9 л.с. / 7,3 кВт</li>
@@ -1548,7 +1671,7 @@
           <li>Закрытая рубка для защиты от непогоды</li>
           <li>Расширенная комплектация</li>
         </ul>
-        <a href="tel:+79517437031" class="btn-primary">Узнать цену</a>
+        <a href="tel:+78172263277" class="btn-primary">Узнать цену</a>
       </div>
     </div>
   </section>
@@ -1632,13 +1755,14 @@
       настоящей воде.</p>
 
     <div class="gallery-grid">
-      <div class="gallery-item" onclick="openLightbox(0)"><img src="photo1.jpg" alt="ЛОСЬ 400 на воде"></div>
-      <div class="gallery-item" onclick="openLightbox(1)"><img src="photo2.jpg" alt="ЛОСЬ 400 с мотором"></div>
-      <div class="gallery-item" onclick="openLightbox(2)"><img src="photo3.jpg" alt="ЛОСЬ 400 на ходу"></div>
-      <div class="gallery-item" onclick="openLightbox(3)"><img src="photo4.jpg" alt="ЛОСЬ 400 на производстве"></div>
-      <div class="gallery-item" onclick="openLightbox(4)"><img src="photo5.jpg" alt="ЛОСЬ 400 закат"></div>
+      <div class="gallery-item" onclick="openLightbox(0)"><img src="photo1.jpg" alt="Моторная лодка ЛОСЬ 400 из ПНД на воде — вид сбоку"></div>
+      <div class="gallery-item" onclick="openLightbox(1)"><img src="photo2.jpg" alt="Лодка ЛОСЬ 400 с подвесным мотором — производство Вологда"></div>
+      <div class="gallery-item" onclick="openLightbox(2)"><img src="photo3.jpg" alt="ЛОСЬ 400 на ходу — испытания лодки из ПНД-пластика"></div>
+      <div class="gallery-item" onclick="openLightbox(3)"><img src="photo4.jpg" alt="Производство лодок ЛОСЬ 400 — завод Вологда, район Емельяново"></div>
+      <div class="gallery-item" onclick="openLightbox(4)"><img src="photo5.jpg" alt="Лодка ЛОСЬ 400 на реке — рыбалка и охота, Северо-Запад России"></div>
     </div>
   </section>
+
 
   <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
@@ -1648,13 +1772,117 @@
     <button class="lightbox-next" onclick="event.stopPropagation();nextPhoto()">›</button>
   </div>
 
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="faq">
+      <div class="section-tag">Вопросы и ответы</div>
+      <h2 class="section-title">ЧАСТЫЕ<br>ВОПРОСЫ</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Можно ли приехать посмотреть лодку вживую?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Да, конечно. Мы находимся в Вологде, район Емельяново. Свяжитесь с нами — согласуем удобное время. Лодку можно осмотреть, потрогать швы, оценить качество материала.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Из чего сделана лодка? Она надёжная?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Корпус изготовлен из листов ПНД-пластика (полиэтилен низкого давления) — листы нарезаются и спаиваются на заводском оборудовании. Материал не гниёт, не ржавеет, не боится ударов о камни. Лодка не тонет даже при заполнении водой. Гарантия на корпус и швы — 3 года.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Сколько стоит и что входит в комплект?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Базовая версия — <strong style="color:var(--amber)">140 000 ₽</strong>. Версия с рубкой (Сохатый) — <strong style="color:var(--amber)">180 000 ₽</strong>. В базовую комплектацию входят: два рундука (кормовой и носовой), рундук под якорь, боковые карманы, съёмная центральная лавка, два весла, транцевая доска, шпигаты и закладные под эхолот. Мотор приобретается отдельно.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Какой мотор подходит? Можно ли поставить мощнее?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Максимальная мощность — 10 л.с. Это ограничение установлено по условиям безопасности и соответствует заводской табличке. Лодка рассчитана на моторы с коротким дейдвудом (S). Подходит большинство распространённых марок: Tohatsu, Honda, Yamaha, Mercury.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Нужно ли регистрировать лодку в ГИМС?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Нет. По действующему законодательству РФ регистрация не требуется для лодок массой до 200 кг включительно с мотором мощностью до 8 кВт (10,88 л.с.) включительно. ЛОСЬ 400 попадает в эту категорию. Мы предоставляем паспорт изделия с заводским номером.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Как получить лодку, если я не из Вологды?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Лодки выдаются самовывозом из Вологды (район Емельяново). При покупке согласуем удобное время для получения.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Сколько ждать? Есть лодки в наличии?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Наличие и сроки изготовления уточняйте напрямую. Производство находится в Вологде. Если лодки нет на складе, срок изготовления обсуждается индивидуально.</div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Какая гарантия?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">36 месяцев на корпус и сварные швы с даты продажи. Гарантия подтверждается паспортом изделия, который вы получаете при покупке. Гарантия не распространяется на механические повреждения и нарушение условий эксплуатации.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD FORM -->
+  <section class="lead-form-section" id="order">
+    <div class="lead-form-inner">
+      <div class="section-tag">Заявка</div>
+      <h2 class="section-title">ОСТАВИТЬ<br>ЗАЯВКУ</h2>
+      <p class="section-desc" style="margin-top:12px;">Перезвоним в течение дня. Без навязывания — просто ответим на вопросы.</p>
+      <form class="lead-form" id="leadForm">
+        <div class="lead-form-row">
+          <input type="text" id="lf-name" placeholder="Ваше имя" required>
+          <input type="tel" id="lf-phone" placeholder="Номер телефона" required>
+        </div>
+        <select id="lf-model">
+          <option value="">Интересующая модель (необязательно)</option>
+          <option value="ЛОСЬ 400 — базовая (140 000 ₽)">ЛОСЬ 400 — базовая (140 000 ₽)</option>
+          <option value="ЛОСЬ 400 Сохатый — с рубкой (180 000 ₽)">ЛОСЬ 400 Сохатый — с рубкой (180 000 ₽)</option>
+          <option value="Не определился">Не определился</option>
+        </select>
+        <textarea id="lf-comment" placeholder="Вопрос или комментарий (необязательно)"></textarea>
+        <button type="submit" class="lead-form-submit" id="lf-submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+        <p class="lead-form-error" id="lf-error">Что-то пошло не так. Позвоните нам напрямую: 8 (8172) 26-32-77</p>
+        <p class="lead-form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+      </form>
+      <div class="lead-form-success" id="lf-success">
+        ✓ Заявка принята!<br>
+        <span style="font-family:var(--font-body);font-size:15px;color:var(--muted);font-weight:400;">Перезвоним вам в ближайшее время.</span>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="cta-section">
     <h2 class="cta-title">ГОТОВЫ ЗАКАЗАТЬ<br><span style="color:var(--amber)">СВОЙ ЛОСЬ?</span></h2>
     <p class="cta-desc">Позвоните — обсудим комплектацию, цвет, сроки. Работаем без давления. Цена фиксирована.</p>
     <div class="cta-actions">
-      <a href="tel:+79517437031" class="btn-primary" style="font-size:15px;padding:20px 48px;">Позвонить сейчас</a>
-      <a href="tel:+79517437031" class="cta-phone">8 (951) 743-70-31</a>
+      <a href="tel:+78172263277" class="btn-primary" style="font-size:15px;padding:20px 48px;">Позвонить сейчас</a>
+      <a href="tel:+78172263277" class="cta-phone">8 (8172) 26-32-77</a>
     </div>
   </section>
 
@@ -1665,7 +1893,7 @@
     <div class="contact-grid">
       <div class="contact-item">
         <div class="contact-label">Телефон</div>
-        <a href="tel:+79517437031" class="contact-value">8 (951) 743-70-31</a>
+        <a href="tel:+78172263277" class="contact-value">8 (8172) 26-32-77</a>
         <div style="margin-top:8px;font-size:12px;color:var(--muted);">Максим — руководитель производства</div>
       </div>
       <div class="contact-item">
@@ -1757,6 +1985,62 @@
       if (e.key === 'Escape') closeLightbox({ target: document.getElementById('lightbox') });
       if (e.key === 'ArrowLeft') prevPhoto();
       if (e.key === 'ArrowRight') nextPhoto();
+    });
+
+    // FAQ accordion
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+
+    // Lead form → Telegram
+    const TG_TOKEN = '8375311262:AAGlnNVIt4mNl1D4J9vCTW9VXR707hrnqK0';
+    const TG_CHAT  = '-1003897427562';
+
+    document.getElementById('leadForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const name    = document.getElementById('lf-name').value.trim();
+      const phone   = document.getElementById('lf-phone').value.trim();
+      const model   = document.getElementById('lf-model').value;
+      const comment = document.getElementById('lf-comment').value.trim();
+      const btn     = document.getElementById('lf-submit');
+      const errEl   = document.getElementById('lf-error');
+
+      if (!name || !phone) return;
+
+      btn.disabled = true;
+      btn.textContent = 'Отправка...';
+      errEl.style.display = 'none';
+
+      const text = [
+        '🛥 <b>Новая заявка с сайта ЛОСЬ 400</b>',
+        '',
+        `👤 <b>Имя:</b> ${name}`,
+        `📞 <b>Телефон:</b> ${phone}`,
+        model   ? `⛵ <b>Модель:</b> ${model}` : '',
+        comment ? `💬 <b>Комментарий:</b> ${comment}` : '',
+      ].filter(Boolean).join('\n');
+
+      try {
+        const res = await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ chat_id: TG_CHAT, text, parse_mode: 'HTML' })
+        });
+        const data = await res.json();
+        if (data.ok) {
+          document.getElementById('leadForm').style.display = 'none';
+          document.getElementById('lf-success').style.display = 'block';
+        } else {
+          throw new Error('TG error');
+        }
+      } catch {
+        btn.disabled = false;
+        btn.textContent = 'ОТПРАВИТЬ ЗАЯВКУ';
+        errEl.style.display = 'block';
+      }
     });
 
   </script>
