@@ -1,0 +1,44 @@
+.btn-primary {
+  background: var(--amber);
+  color: #0a0a0a;
+  padding: 16px 36px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+}
+
+.btn-primary:hover {
+  background: #f5991f;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(232, 133, 26, 0.35);
+}
+
+.btn-secondary {
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: gap 0.2s;
+}
+
+.btn-secondary::after {
+  content: '→';
+  color: var(--amber);
+}
+
+.btn-secondary:hover {
+  gap: 16px;
+}

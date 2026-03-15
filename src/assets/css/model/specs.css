@@ -1,0 +1,16 @@
+/* ─── MODEL SPECS ─── */
+section { padding: 80px 80px; }
+.section-tag { font-size: 11px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: var(--amber); margin-bottom: 16px; }
+.section-tag::before { content: '—  '; }
+.section-title { font-family: var(--font-display); font-size: clamp(36px, 5vw, 60px); line-height: 0.95; letter-spacing: 2px; margin-bottom: 16px; }
+.section-desc { color: #b0b3b8; font-size: 15px; max-width: 560px; margin-bottom: 48px; }
+
+.specs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.specs-table { border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+.specs-row { display: flex; justify-content: space-between; align-items: center; padding: 13px 20px; border-bottom: 1px solid var(--border); font-size: 14px; }
+.specs-row:last-child { border-bottom: none; }
+.specs-key { color: var(--muted); }
+.specs-val { font-weight: 600; text-align: right; }
+.specs-row.hl { background: rgba(232,133,26,0.06); }
+.specs-row.hl .specs-val { color: var(--amber); }
+.specs-block-title { font-family: var(--font-display); font-size: 20px; letter-spacing: 1px; color: var(--amber); margin-bottom: 16px; }

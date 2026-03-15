@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/blog-post.njk",
+  "tags": "post",
+  "pageCss": ["/assets/css/blog/post.css"]
+}

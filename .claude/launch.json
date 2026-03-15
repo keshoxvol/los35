@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "11ty dev",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["@11ty/eleventy", "--serve", "--port=8081", "--input=src", "--output=_site"],
+      "port": 8081
+    }
+  ]
+}

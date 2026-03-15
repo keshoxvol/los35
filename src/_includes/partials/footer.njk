@@ -1,0 +1,30 @@
+<footer>
+  <div class="footer-logo-wrap">
+    <img src="/img/logo.png" alt="{{ site.name }}" style="height:52px;width:auto;object-fit:contain;">
+  </div>
+  <div class="footer-text">
+    {{ site.copyright }}<br>
+    Моторные лодки из ПНД-пластика · Производство Вологда
+  </div>
+  <div class="socials">
+    <a href="/blog/" class="social-link">Блог</a>
+    {% for item in socials %}
+    <a href="{{ item.url }}" class="social-link" target="_blank">
+      {% if item.icon == "vk" %}
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14C20.67 22 22 20.67 22 15.07V8.93C22 3.33 20.67 2 15.07 2zm3.08 13.5h-1.6c-.6 0-.79-.48-1.87-1.58-.94-.93-1.35-.93-1.35 0 0 .93-.23 1.58-1.85 1.58-2.72 0-5.42-2.38-5.42-7.21 0-1.29.36-2.57 1.04-3.62.24-.36.63-.57 1.06-.57h1.6c.48 0 .68.19.68.69l-.69 3.27c-.04.19.04.4.22.52.76.51 2.48-2.22 2.48-2.22.16-.28.45-.44.76-.44h1.74c.52 0 .65.26.52.78l-1.22 2.86c-.12.28 0 .48.28.72.93.79 2.83 2.93 2.83 4.16 0 .64-.47 1.06-.21 1.06z" />
+      </svg>
+      {% elif item.icon == "rutube" %}
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z" />
+      </svg>
+      {% elif item.icon == "avito" %}
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1 14H5c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h14c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1zm-5-7h-1V9h-2v2H9v2h2v2h2v-2h1v-2z" />
+      </svg>
+      {% endif %}
+      {{ item.name }}
+    </a>
+    {% endfor %}
+  </div>
+</footer>

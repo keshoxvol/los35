@@ -1,0 +1,503 @@
+---
+layout: layouts/page.njk
+title: "Лодка ЛОСЬ 400 — купить лодку из ПНД | Производство Вологда"
+description: "Лодка Лось 400 — моторная лодка из ПНД-пластика собственного производства. Купить лодку из ПНД в Вологде: грузоподъёмность 350 кг, 4 человека, мотор до 9,9 л.с. Гарантия 36 месяцев. Регистрация в ГИМС не нужна."
+keywords: "лодка лось, лодка лось 400, лодка из пнд, лодка из пнд купить, лодка пнд вологда, моторная лодка лось, купить лодку лось, лодка из полиэтилена, лодка без регистрации ГИМС, моторная лодка Вологда, купить лодку Северо-Запад"
+robots: "index, follow"
+schema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Моторная лодка ЛОСЬ 400",
+    "description": "Моторная лодка из ПНД-пластика собственного производства. Грузоподъёмность 350 кг, 4 человека, мотор до 9,9 л.с. Регистрация в ГИМС не нужна.",
+    "brand": {
+      "@type": "Brand",
+      "name": "ЛОСЬ 400"
+    },
+    "manufacturer": {
+      "@type": "Organization",
+      "name": "ООО «Вологодский Судостроительный Завод»",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Вологда",
+        "addressRegion": "Вологодская область",
+        "addressCountry": "RU"
+      },
+      "telephone": "+78172263277"
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "ЛОСЬ 400 — базовая",
+        "price": "140000",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "ООО «Вологодский Судостроительный Завод»"
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "ЛОСЬ 400 Сохатый — с рубкой",
+        "price": "180000",
+        "priceCurrency": "RUB",
+        "availability": "https://schema.org/PreOrder",
+        "seller": {
+          "@type": "Organization",
+          "name": "ООО «Вологодский Судостроительный Завод»"
+        }
+      }
+    ],
+    "warranty": "36 месяцев на корпус и сварные швы"
+  }
+pageCss:
+  - /assets/css/home/hero.css
+  - /assets/css/home/stats.css
+  - /assets/css/home/stock.css
+  - /assets/css/home/why.css
+  - /assets/css/home/specs.css
+  - /assets/css/home/models.css
+  - /assets/css/home/geo.css
+  - /assets/css/home/gallery.css
+  - /assets/css/home/faq.css
+  - /assets/css/home/lead-form.css
+  - /assets/css/home/cta.css
+  - /assets/css/home/contact.css
+pageJs:
+  - /assets/js/counter.js
+  - /assets/js/lightbox.js
+  - /assets/js/faq.js
+  - /assets/js/lead-form.js
+---
+
+<script>
+  window.ENV = { TG_TOKEN: "{{ telegram.token }}", TG_CHAT: "{{ telegram.chat }}" };
+  window.GALLERY_PHOTOS = [{% for p in gallery %}"{{ p.src }}"{% if not loop.last %},{% endif %}{% endfor %}];
+</script>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-left">
+      <div class="hero-eyebrow">Моторная лодка из ПНД</div>
+      <h1 class="hero-title">
+        ЛОСЬ
+        <span>400</span>
+      </h1>
+      <div class="hero-subtitle">ПНД · ВОЛОГДА</div>
+      <p class="hero-desc">
+        Моторная лодка из ПНД-пластика собственного производства.
+        Для тех, кто знает воду. Гарантия 36 месяцев — на корпус и швы.
+        Регистрация в ГИМС не нужна.
+      </p>
+
+      <div class="hero-actions">
+        <a href="tel:{{ site.phone }}" class="btn-primary">Позвонить и заказать</a>
+        <a href="#specs" class="btn-secondary">Характеристики</a>
+      </div>
+      <div style="margin-top:24px;" class="socials">
+        <a href="https://vk.com/sigmaboat" class="social-link" target="_blank">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14C20.67 22 22 20.67 22 15.07V8.93C22 3.33 20.67 2 15.07 2zm3.08 13.5h-1.6c-.6 0-.79-.48-1.87-1.58-.94-.93-1.35-.93-1.35 0 0 .93-.23 1.58-1.85 1.58-2.72 0-5.42-2.38-5.42-7.21 0-1.29.36-2.57 1.04-3.62.24-.36.63-.57 1.06-.57h1.6c.48 0 .68.19.68.69l-.69 3.27c-.04.19.04.4.22.52.76.51 2.48-2.22 2.48-2.22.16-.28.45-.44.76-.44h1.74c.52 0 .65.26.52.78l-1.22 2.86c-.12.28 0 .48.28.72.93.79 2.83 2.93 2.83 4.16 0 .64-.47 1.06-.21 1.06z" />
+          </svg>
+          ВКонтакте
+        </a>
+        <a href="https://rutube.ru/channel/69554486/" class="social-link" target="_blank">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z" />
+          </svg>
+          Рутуб
+        </a>
+        <a href="https://www.avito.ru/brands/01b02a3b79e4ceaebb3f68aba9a1ef9f" class="social-link" target="_blank">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1 14H5c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h14c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1zm-5-7h-1V9h-2v2H9v2h2v2h2v-2h1v-2z" />
+          </svg>
+          Авито
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="boat-visual">
+        <div style="border-radius:8px;overflow:hidden;aspect-ratio:16/9;box-shadow:0 20px 60px rgba(232,133,26,0.2);">
+          <iframe width="100%" height="100%" src="https://rutube.ru/play/embed/c8b73a6c02b31308fd32880849a5bde8" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen style="border:none;display:block;"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat-item fade-up">
+      <div class="stat-value">350</div>
+      <div class="stat-label">кг грузоподъёмность</div>
+    </div>
+    <div class="stat-item fade-up">
+      <div class="stat-value">4</div>
+      <div class="stat-label">человека на борту</div>
+    </div>
+    <div class="stat-item fade-up">
+      <div class="stat-value">45</div>
+      <div class="stat-label">км/ч скорость</div>
+    </div>
+    <div class="stat-item fade-up">
+      <div class="stat-value">36</div>
+      <div class="stat-label">месяцев гарантии</div>
+    </div>
+    <div class="stat-item fade-up">
+      <div class="stat-value">ПНД</div>
+      <div class="stat-label">материал корпуса</div>
+    </div>
+  </div>
+
+  <!-- STOCK -->
+  <section class="stock" id="stock">
+    <div class="section-tag">Наличие</div>
+    <h2 class="section-title">КАК КУПИТЬ</h2>
+    <p class="section-desc">Лодки продаются из наличия и под предзаказ. Уточняйте актуальный статус по телефону.</p>
+
+    <div class="stock-grid">
+      <div class="stock-card instock fade-up">
+        <div class="stock-status">
+          <div class="stock-dot green"></div>В наличии
+        </div>
+        <div class="stock-title">ЛОСЬ 400</div>
+        <div class="stock-sub">Базовая · Открытый корпус</div>
+        <p class="stock-desc">Готовые лодки на складе — забираете сразу. Приезжаете, смотрите вживую, оплачиваете и
+          уезжаете с лодкой в тот же день.</p>
+        <div class="stock-detail">
+          <div class="stock-detail-item">Осмотр на производстве перед оплатой</div>
+          <div class="stock-detail-item">Оплата в день получения — наличными, картой или СБП</div>
+          <div class="stock-detail-item">Самовывоз: г. Вологда, район Емельяново</div>
+          <div class="stock-detail-item">Паспорт изделия и договор купли-продажи в комплекте</div>
+        </div>
+        <a href="tel:{{ site.phone }}" class="btn-primary">Уточнить наличие</a>
+      </div>
+
+      <div class="stock-card preorder fade-up">
+        <div class="stock-status">
+          <div class="stock-dot amber"></div>Предзаказ
+        </div>
+        <div class="stock-title">ЛОСЬ 400</div>
+        <div class="stock-sub">Любая версия · Ваш цвет и опции</div>
+        <p class="stock-desc">Заказываете лодку под себя — выбираете цвет, комплектацию. Вносите аванс 30%, остаток —
+          при получении готовой лодки.</p>
+        <div class="stock-detail">
+          <div class="stock-detail-item">Аванс 30% при подписании договора подряда</div>
+          <div class="stock-detail-item">Выбор цвета корпуса и дополнительных опций</div>
+          <div class="stock-detail-item">Срок изготовления — по согласованию</div>
+          <div class="stock-detail-item">Остаток 70% — в день получения до передачи лодки</div>
+        </div>
+        <a href="tel:{{ site.phone }}" class="btn-primary">Оформить предзаказ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="why" id="why">
+    <div class="section-tag">Почему ЛОСЬ</div>
+    <h2 class="section-title">СДЕЛАНО<br>НА СЕВЕРЕ</h2>
+    <p class="section-desc">Каждая лодка собирается вручную на производстве в Вологде. Мы знаем, что такое северная вода
+      — и делаем лодки именно для неё.</p>
+    <div class="why-grid">
+      <div class="why-card fade-up">
+        <div class="why-num">01</div><span class="why-icon">⬡</span>
+        <div class="why-title">ПНД-ПЛАСТИК</div>
+        <p class="why-text">Корпус из листов полиэтилена низкого давления. Не гниёт, не ржавеет, не боится ударов о
+          камни и лёд. Материал, проверенный десятилетиями в северных условиях.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-num">02</div><span class="why-icon">◈</span>
+        <div class="why-title">БЕЗ РЕГИСТРАЦИИ</div>
+        <p class="why-text">Масса до 200 кг, мотор до 9,9 л.с. — регистрация в ГИМС не требуется. Купил, спустил на
+          воду, поехал. Без бумаг и очередей.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-num">03</div><span class="why-icon">◇</span>
+        <div class="why-title">ГАРАНТИЯ 36 МЕС.</div>
+        <p class="why-text">Три года на корпус и швы. Не полгода, не год — три года. Если что-то пойдёт не так по нашей
+          вине, устраним за свой счёт в Вологде.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-num">04</div><span class="why-icon">⬟</span>
+        <div class="why-title">СВОЁ ПРОИЗВОДСТВО</div>
+        <p class="why-text">Не перекупщики. Мы производитель. Нарезка, сборка, контроль качества — всё у нас. Цена без
+          посредников.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-num">05</div><span class="why-icon">◉</span>
+        <div class="why-title">ФИКСИРОВАННАЯ ЦЕНА</div>
+        <p class="why-text">Цена назначена — и она не меняется в процессе. Никаких «доплат» и скрытых опций. Сказали —
+          сделали.</p>
+      </div>
+      <div class="why-card fade-up">
+        <div class="why-num">06</div><span class="why-icon">△</span>
+        <div class="why-title">САМОВЫВОЗ ВОЛОГДА</div>
+        <p class="why-text">Забираете сами с производства в районе Емельяново. Смотрите вживую, проверяете перед
+          получением. Никаких сюрпризов.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECS -->
+  <section class="specs" id="specs">
+    <div class="specs-layout">
+      <div>
+        <div class="section-tag">Характеристики</div>
+        <h2 class="section-title">ЛОСЬ 400</h2>
+        <p class="section-desc">Базовая версия. Открытый корпус, полная комплектация, готова к воде.</p>
+        <div class="specs-table">
+          <div class="specs-row"><span class="specs-key">Длина габаритная</span><span class="specs-val">4,00 м</span></div>
+          <div class="specs-row"><span class="specs-key">Ширина габаритная</span><span class="specs-val">1,43 м</span></div>
+          <div class="specs-row"><span class="specs-key">Высота борта</span><span class="specs-val">0,65 м</span></div>
+          <div class="specs-row specs-highlight"><span class="specs-key">Грузоподъёмность</span><span class="specs-val">350 кг</span></div>
+          <div class="specs-row specs-highlight"><span class="specs-key">Вместимость</span><span class="specs-val">4 человека</span></div>
+          <div class="specs-row"><span class="specs-key">Масса пустого судна</span><span class="specs-val">100 кг</span></div>
+          <div class="specs-row"><span class="specs-key">Осадка</span><span class="specs-val">0,15 м</span></div>
+          <div class="specs-row specs-highlight"><span class="specs-key">Мотор (макс.)</span><span class="specs-val">9,9 л.с. / 7,3 кВт</span></div>
+          <div class="specs-row"><span class="specs-key">Скорость макс.</span><span class="specs-val">45 км/ч</span></div>
+          <div class="specs-row"><span class="specs-key">Материал корпуса</span><span class="specs-val">ПНД-100</span></div>
+          <div class="specs-row"><span class="specs-key">Район плавания</span><span class="specs-val">IV (ТР ТС 026/2012)</span></div>
+          <div class="specs-row"><span class="specs-key">Удаление от берега</span><span class="specs-val">до 1,6 мили</span></div>
+          <div class="specs-row specs-highlight"><span class="specs-key">Регистрация ГИМС</span><span class="specs-val">Не требуется</span></div>
+          <div class="specs-row specs-highlight"><span class="specs-key">Гарантия</span><span class="specs-val">36 месяцев</span></div>
+        </div>
+      </div>
+      <div class="specs-visual">
+        <div class="specs-badge">Базовая комплектация</div>
+        <div class="specs-table">
+          <div class="specs-row"><span class="specs-key">Рундук кормовой</span><span class="specs-val">1 шт.</span></div>
+          <div class="specs-row"><span class="specs-key">Рундук носовой</span><span class="specs-val">1 шт.</span></div>
+          <div class="specs-row"><span class="specs-key">Рундук под якорь</span><span class="specs-val">1 шт.</span></div>
+          <div class="specs-row"><span class="specs-key">Боковые карманы</span><span class="specs-val">2 шт.</span></div>
+          <div class="specs-row"><span class="specs-key">Лавка центральная</span><span class="specs-val">1 шт. (съёмная)</span></div>
+          <div class="specs-row"><span class="specs-key">Вёсла</span><span class="specs-val">2 шт.</span></div>
+          <div class="specs-row"><span class="specs-key">Транцевая доска</span><span class="specs-val">влагостойкая фанера</span></div>
+          <div class="specs-row"><span class="specs-key">Шпигаты</span><span class="specs-val">3 шт.</span></div>
+          <div class="specs-row"><span class="specs-key">Закладные под эхолот</span><span class="specs-val">2 шт.</span></div>
+          <div class="specs-row"><span class="specs-key">Подуключины</span><span class="specs-val">2 шт.</span></div>
+          <div class="specs-row"><span class="specs-key">Такелажная скоба (нос)</span><span class="specs-val">1 шт.</span></div>
+        </div>
+        <div class="no-reg-block">
+          <div class="no-reg-title">БЕЗ РЕГИСТРАЦИИ В ГИМС</div>
+          <p class="no-reg-text">ЛОСЬ 400 не подлежит обязательной регистрации: масса до 200 кг, мощность мотора до 8
+            кВт включительно. Можно эксплуатировать сразу после покупки.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODELS -->
+  <section class="models" id="models">
+    <div class="section-tag">Линейка</div>
+    <h2 class="section-title">ДВЕ МОДЕЛИ</h2>
+    <p class="section-desc">Выбирайте исходя из задач. Оба варианта — собственное производство, одни материалы и
+      стандарты качества.</p>
+    <div style="display:flex;gap:24px;margin-bottom:0;flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:10px;font-size:13px;">
+        <div style="width:8px;height:8px;border-radius:50%;background:#4caf50;box-shadow:0 0 8px rgba(76,175,80,0.5);flex-shrink:0;"></div><span style="color:var(--muted);">Базовая версия — <strong style="color:var(--white);">в наличии</strong></span>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;font-size:13px;">
+        <div style="width:8px;height:8px;border-radius:50%;background:var(--amber);box-shadow:0 0 8px rgba(232,133,26,0.5);flex-shrink:0;"></div><span style="color:var(--muted);">Сохатый — <strong style="color:var(--white);">предзаказ</strong></span>
+      </div>
+    </div>
+    <div class="models-grid">
+      <div class="model-card fade-up">
+        <div class="model-name">ЛОСЬ 400</div>
+        <div class="model-sub">Базовая · Открытый корпус</div>
+        <ul class="model-features">
+          <li>Масса 100 кг, грузоподъёмность 350 кг</li>
+          <li>Мотор до 9,9 л.с. / 7,3 кВт</li>
+          <li>Скорость до 45 км/ч</li>
+          <li>4 человека на борту</li>
+          <li>Регистрация ГИМС не нужна</li>
+          <li>Полная базовая комплектация</li>
+        </ul>
+        <a href="/los-400-bazovaya.html" class="btn-primary">Подробнее</a>
+      </div>
+      <div class="model-card featured fade-up">
+        <div class="model-name">ЛОСЬ 400</div>
+        <div class="model-sub">Сохатый · С рубкой</div>
+        <ul class="model-features">
+          <li>Масса 130 кг, грузоподъёмность 300 кг</li>
+          <li>Мотор до 9,9 л.с. / 7,3 кВт</li>
+          <li>Скорость до 50 км/ч</li>
+          <li>4 человека на борту</li>
+          <li>Закрытая рубка для защиты от непогоды</li>
+          <li>Расширенная комплектация</li>
+        </ul>
+        <a href="/los-400-sokhatyy.html" class="btn-primary">Подробнее</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GEO -->
+  <section class="geo" id="geography">
+    <div class="geo-inner">
+      <div>
+        <div class="section-tag">Где работаем</div>
+        <h2 class="section-title">ПРОИЗВОДСТВО<br>В ВОЛОГДЕ</h2>
+        <p class="section-desc">Завод находится в Вологде, район Емельяново. Самовывоз — лично смотрите лодку перед
+          получением.</p>
+        <div class="geo-points">
+          <div class="geo-point fade-up">
+            <div class="geo-dot"></div>
+            <div>
+              <div class="geo-point-title">ПРОИЗВОДСТВО</div>
+              <p class="geo-point-text">г. Вологда, район Емельяново. Забираете лично с завода — осматриваете изделие на
+                месте.</p>
+            </div>
+          </div>
+          <div class="geo-point fade-up">
+            <div class="geo-dot"></div>
+            <div>
+              <div class="geo-point-title">САМОВЫВОЗ</div>
+              <p class="geo-point-text">По предварительному согласованию даты и времени. Звоните — договоримся.</p>
+            </div>
+          </div>
+          <div class="geo-point fade-up">
+            <div class="geo-dot"></div>
+            <div>
+              <div class="geo-point-title">СЕВЕРО-ЗАПАД</div>
+              <p class="geo-point-text">Вологда — удобная точка для покупателей со всего Северо-Запада. Рядом трассы М8,
+                А119.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="geo-map">
+        <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg"
+          style="width:100%;height:100%;padding:40px;">
+          <circle cx="200" cy="200" r="160" stroke="rgba(42,45,50,0.8)" stroke-width="1" fill="none" />
+          <circle cx="200" cy="200" r="120" stroke="rgba(42,45,50,0.5)" stroke-width="1" fill="none"
+            stroke-dasharray="4 8" />
+          <circle cx="200" cy="200" r="80" stroke="rgba(42,45,50,0.3)" stroke-width="1" fill="none"
+            stroke-dasharray="2 10" />
+          <line x1="40" y1="200" x2="360" y2="200" stroke="rgba(42,45,50,0.4)" stroke-width="1" />
+          <line x1="200" y1="40" x2="200" y2="360" stroke="rgba(42,45,50,0.4)" stroke-width="1" />
+          <circle cx="200" cy="185" r="6" fill="#E8851A" />
+          <circle cx="200" cy="185" r="12" stroke="#E8851A" stroke-width="1" fill="none" opacity="0.5" />
+          <circle cx="200" cy="185" r="20" stroke="#E8851A" stroke-width="1" fill="none" opacity="0.2" />
+          <circle cx="200" cy="185" r="30" stroke="#E8851A" stroke-width="0.5" fill="none" opacity="0.1" />
+          <text x="215" y="180" font-family="'Bebas Neue',sans-serif" font-size="16" fill="#E8851A"
+            letter-spacing="2">ВОЛОГДА</text>
+          <line x1="200" y1="185" x2="140" y2="240" stroke="rgba(232,133,26,0.2)" stroke-width="1"
+            stroke-dasharray="3 5" />
+          <circle cx="140" cy="240" r="3" fill="rgba(232,133,26,0.3)" />
+          <line x1="200" y1="185" x2="260" y2="150" stroke="rgba(232,133,26,0.2)" stroke-width="1"
+            stroke-dasharray="3 5" />
+          <circle cx="260" cy="150" r="3" fill="rgba(232,133,26,0.3)" />
+          <line x1="200" y1="185" x2="130" y2="140" stroke="rgba(232,133,26,0.2)" stroke-width="1"
+            stroke-dasharray="3 5" />
+          <circle cx="130" cy="140" r="3" fill="rgba(232,133,26,0.3)" />
+          <text x="150" y="255" font-family="'Montserrat',sans-serif" font-size="9"
+            fill="rgba(122,125,130,0.7)">Ярославль</text>
+          <text x="265" y="148" font-family="'Montserrat',sans-serif" font-size="9"
+            fill="rgba(122,125,130,0.7)">Архангельск</text>
+          <text x="80" y="138" font-family="'Montserrat',sans-serif" font-size="9"
+            fill="rgba(122,125,130,0.7)">Петербург</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="section-tag">Фотогалерея</div>
+    <h2 class="section-title">ЛОСЬ 400<br>В ДЕЛЕ</h2>
+    <p class="section-desc">Реальные фото с испытаний и выездов. Без рендеров и фотошопа — только настоящая лодка на
+      настоящей воде.</p>
+
+    <div class="gallery-grid">
+      {% for photo in gallery %}
+      <div class="gallery-item" onclick="openLightbox({{ loop.index0 }})"><img src="/img/{{ photo.src }}" alt="{{ photo.alt }}"></div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox()">×</button>
+    <button class="lightbox-prev" onclick="event.stopPropagation();prevPhoto()">‹</button>
+    <img id="lightbox-img" src="" alt="">
+    <button class="lightbox-next" onclick="event.stopPropagation();nextPhoto()">›</button>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="faq">
+      <div class="section-tag">Вопросы и ответы</div>
+      <h2 class="section-title">ЧАСТЫЕ<br>ВОПРОСЫ</h2>
+      <div class="faq-list">
+        {% for item in faq %}
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            {{ item.q }}
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">{{ item.a | safe }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD FORM -->
+  <section class="lead-form-section" id="order">
+    <div class="lead-form-inner">
+      <div class="section-tag">Заявка</div>
+      <h2 class="section-title">ОСТАВИТЬ<br>ЗАЯВКУ</h2>
+      <p class="section-desc" style="margin-top:12px;">Перезвоним в течение дня. Без навязывания — просто ответим на вопросы.</p>
+      <form class="lead-form" id="leadForm">
+        <div class="lead-form-row">
+          <input type="text" id="lf-name" placeholder="Ваше имя" required>
+          <input type="tel" id="lf-phone" placeholder="Номер телефона" required>
+        </div>
+        <select id="lf-model">
+          <option value="">Интересующая модель (необязательно)</option>
+          <option value="ЛОСЬ 400 — базовая (140 000 ₽)">ЛОСЬ 400 — базовая (140 000 ₽)</option>
+          <option value="ЛОСЬ 400 Сохатый — с рубкой (180 000 ₽)">ЛОСЬ 400 Сохатый — с рубкой (180 000 ₽)</option>
+          <option value="Не определился">Не определился</option>
+        </select>
+        <textarea id="lf-comment" placeholder="Вопрос или комментарий (необязательно)"></textarea>
+        <button type="submit" class="lead-form-submit" id="lf-submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+        <p class="lead-form-error" id="lf-error">Что-то пошло не так. Позвоните нам напрямую: {{ site.phoneDisplay }}</p>
+        <p class="lead-form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+      </form>
+      <div class="lead-form-success" id="lf-success">
+        ✓ Заявка принята!<br>
+        <span style="font-family:var(--font-body);font-size:15px;color:var(--muted);font-weight:400;">Перезвоним вам в ближайшее время.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2 class="cta-title">ГОТОВЫ ЗАКАЗАТЬ<br><span style="color:var(--amber)">СВОЙ ЛОСЬ?</span></h2>
+    <p class="cta-desc">Позвоните — обсудим комплектацию, цвет, сроки. Работаем без давления. Цена фиксирована.</p>
+    <div class="cta-actions">
+      <a href="tel:{{ site.phone }}" class="btn-primary" style="font-size:15px;padding:20px 48px;">Позвонить сейчас</a>
+      <a href="tel:{{ site.phone }}" class="cta-phone">{{ site.phoneDisplay }}</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-tag">Контакты</div>
+    <h2 class="section-title">СВЯЖИТЕСЬ<br>С НАМИ</h2>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="contact-label">Телефон</div>
+        <a href="tel:{{ site.phone }}" class="contact-value">{{ site.phoneDisplay }}</a>
+        <div style="margin-top:8px;font-size:12px;color:var(--muted);">Максим — руководитель производства</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">Производство / Самовывоз</div>
+        <span class="contact-value" style="font-size:18px;">{{ site.address }}</span>
+        <div style="margin-top:8px;font-size:12px;color:var(--muted);">По предварительному согласованию</div>
+      </div>
+    </div>
+  </section>

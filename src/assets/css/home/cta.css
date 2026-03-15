@@ -1,0 +1,64 @@
+/* ─── CTA ─── */
+.cta-section {
+  background: #1a1c1f;
+  border-top: 1px solid #2a2d32;
+  border-bottom: 1px solid #2a2d32;
+  text-align: center;
+  padding: 100px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: 'ЛОСЬ';
+  position: absolute;
+  font-family: var(--font-display);
+  font-size: 300px;
+  color: rgba(232, 133, 26, 0.03);
+  letter-spacing: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.cta-title {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 6vw, 80px);
+  letter-spacing: 2px;
+  line-height: 0.95;
+  margin-bottom: 24px;
+  position: relative;
+  color: var(--white);
+}
+
+.cta-desc {
+  color: rgba(240, 237, 232, 0.55);
+  max-width: 480px;
+  margin: 0 auto 48px;
+  line-height: 1.8;
+  position: relative;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.cta-phone {
+  font-family: var(--font-display);
+  font-size: 28px;
+  letter-spacing: 3px;
+  color: var(--amber);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.cta-phone:hover {
+  opacity: 0.8;
+}

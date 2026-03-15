@@ -1,0 +1,5 @@
+/* ─── MODEL KIT ─── */
+.kit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 8px; }
+.kit-item { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 16px 20px; font-size: 14px; }
+.kit-item strong { display: block; color: var(--white); margin-bottom: 4px; }
+.kit-item span { color: var(--muted); font-size: 12px; }

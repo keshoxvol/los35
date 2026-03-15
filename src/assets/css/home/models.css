@@ -1,0 +1,81 @@
+/* ─── MODELS ─── */
+.models {
+  background: #111214;
+}
+
+.models-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.model-card {
+  border: 1px solid #2a2d32;
+  padding: 48px;
+  position: relative;
+  overflow: hidden;
+  background: #111214;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.model-card:hover {
+  border-color: var(--amber);
+  transform: translateY(-4px);
+}
+
+.model-card.featured {
+  border-color: rgba(232, 133, 26, 0.35);
+}
+
+.model-card.featured::before {
+  content: 'НОВИНКА';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--amber);
+  color: #0a0a0a;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 4px 12px;
+}
+
+.model-name {
+  font-family: var(--font-display);
+  font-size: 48px;
+  letter-spacing: 3px;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.model-sub {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+
+.model-features {
+  list-style: none;
+  margin-bottom: 36px;
+}
+
+.model-features li {
+  font-size: 13px;
+  color: rgba(240, 237, 232, 0.65);
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(42, 45, 50, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.model-features li::before {
+  content: '—';
+  color: var(--amber);
+  flex-shrink: 0;
+}

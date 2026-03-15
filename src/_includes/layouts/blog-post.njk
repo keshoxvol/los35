@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+isArticle: true
+---
+{% include "partials/nav-main.njk" %}
+<main class="blog-post">
+  <div class="blog-post-header">
+    <div class="container">
+      <a href="/blog/" class="blog-back">← Все статьи</a>
+      <h1 class="blog-post-title">{{ title }}</h1>
+      {% if date %}<div class="blog-post-date">{{ date | dateRu }}</div>{% endif %}
+    </div>
+  </div>
+  <div class="blog-post-body container">
+    {{ content | safe }}
+  </div>
+</main>
+{% include "partials/footer.njk" %}

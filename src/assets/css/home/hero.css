@@ -1,0 +1,129 @@
+/* ─── HERO ─── */
+.hero {
+  background: #0a0a0a;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 80% at 70% 50%, rgba(232, 133, 26, 0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 60% at 20% 80%, rgba(232, 133, 26, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(232, 133, 26, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232, 133, 26, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 140px 60px 100px 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-eyebrow::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: var(--amber);
+  flex-shrink: 0;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(72px, 9vw, 120px);
+  line-height: 0.9;
+  letter-spacing: 2px;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.hero-title span {
+  color: var(--amber);
+  display: block;
+}
+
+.hero-subtitle {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.5vw, 32px);
+  letter-spacing: 6px;
+  color: var(--muted);
+  margin-bottom: 40px;
+}
+
+.hero-desc {
+  font-size: 15px;
+  color: rgba(240, 237, 232, 0.65);
+  max-width: 560px;
+  line-height: 1.8;
+  margin-bottom: 48px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-right {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 40px 80px;
+}
+
+.boat-visual {
+  width: 100%;
+  max-width: 560px;
+  position: relative;
+}
+
+.boat-svg {
+  width: 100%;
+  filter: drop-shadow(0 20px 60px rgba(232, 133, 26, 0.2));
+  animation: float 6s ease-in-out infinite;
+}
+
+.boat-glow {
+  animation: glowPulse 6s ease-in-out infinite !important;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 40px;
+  background: radial-gradient(ellipse, rgba(232, 133, 26, 0.25) 0%, transparent 70%);
+  filter: blur(20px);
+}

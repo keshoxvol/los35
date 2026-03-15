@@ -1,0 +1,68 @@
+/* ─── GEO ─── */
+.geo {
+  background: #0a0a0a;
+}
+
+.geo-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.geo-points {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.geo-point {
+  display: flex;
+  gap: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid #2a2d32;
+  align-items: flex-start;
+}
+
+.geo-point:last-child {
+  border-bottom: none;
+}
+
+.geo-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--amber);
+  flex-shrink: 0;
+  margin-top: 6px;
+  box-shadow: 0 0 12px rgba(232, 133, 26, 0.5);
+}
+
+.geo-point-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+  color: var(--white);
+}
+
+.geo-point-text {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.geo-map {
+  aspect-ratio: 1;
+  border: 1px solid #2a2d32;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0a0a;
+}
+
+.geo-map svg {
+  width: 100%;
+  height: 100%;
+}

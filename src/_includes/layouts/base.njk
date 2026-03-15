@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru" style="color-scheme: dark;">
+<head>
+  <meta charset="UTF-8">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id={{ site.metrikaId }}', 'ym');
+    ym({{ site.metrikaId }}, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/{{ site.metrikaId }}" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  {% if keywords %}<meta name="keywords" content="{{ keywords }}">{% endif %}
+  <meta name="robots" content="{{ robots or 'index, follow' }}">
+  {% if canonical %}<link rel="canonical" href="{{ canonical }}">{% endif %}
+  <!-- Open Graph -->
+  <meta property="og:type" content="{{ ogType or 'website' }}">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}{{ ogImage or '/img/og-default.jpg' }}">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ ogImage or '/img/og-default.jpg' }}">
+  {% if schema %}<script type="application/ld+json">{{ schema | safe }}</script>{% endif %}
+  {% if isArticle %}<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ title | dump | safe }},
+    "description": {{ description | dump | safe }},
+    "datePublished": "{{ date | dateIso }}",
+    "url": "{{ site.url }}{{ page.url }}",
+    "publisher": {
+      "@type": "Organization",
+      "name": {{ site.company | dump | safe }}
+    }
+  }
+  </script>{% endif %}
+  {% if includeFaq %}<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {% for item in faq %}
+      {
+        "@type": "Question",
+        "name": {{ item.q | dump | safe }},
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": {{ item.a | striptags | dump | safe }}
+        }
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+  </script>{% endif %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/nav.css">
+  <link rel="stylesheet" href="/assets/css/buttons.css">
+  <link rel="stylesheet" href="/assets/css/sections.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  {% for css in pageCss %}
+  <link rel="stylesheet" href="{{ css }}">
+  {% endfor %}
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+<body>
+  {{ content | safe }}
+  <script src="/assets/js/animations.js"></script>
+  {% for js in pageJs %}
+  <script src="{{ js }}"></script>
+  {% endfor %}
+</body>
+</html>
