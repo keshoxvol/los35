@@ -4,7 +4,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"src/assets/css": "assets/css"});
   eleventyConfig.addPassthroughCopy({"src/assets/js": "assets/js"});
 
-  eleventyConfig.addFilter("dateRu", function(date) {
+eleventyConfig.addFilter("dateRu", function(date) {
     return new Date(date).toLocaleDateString('ru-RU', { year: 'numeric', month: 'long', day: 'numeric' });
   });
 
