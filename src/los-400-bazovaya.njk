@@ -28,7 +28,30 @@ schema: |
       "availability": "https://schema.org/InStock",
       "seller": { "@type": "Organization", "name": "ООО «Вологодский Судостроительный Завод»" }
     },
-    "warranty": "36 месяцев на корпус и сварные швы"
+    "warranty": "36 месяцев на корпус и сварные швы",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "2",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Дмитрий" },
+        "datePublished": "2025-09-23",
+        "reviewBody": "Отличный продавец и изготовитель! Доставил лодку до места (100 км от Вологды). Очень отзывчивый — приехал дважды и бесплатно устранил небольшой недочёт, выявленный в процессе эксплуатации. Лодка однозначно стоит своих денег! Однозначно рекомендую.",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Борис Федотовский" },
+        "datePublished": "2025-08-25",
+        "reviewBody": "Созвонились, договорились, встретились, лодку забрал. Лодка отличная.",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+      }
+    ]
   }
 pageCss:
   - /assets/css/model/hero.css
@@ -154,12 +177,30 @@ pageJs: []
     </div>
   </section>
 
+  <!-- REVIEWS -->
+  <section>
+    <div class="section-tag">Отзывы</div>
+    <h2 class="section-title">ЧТО ГОВОРЯТ<br>ПОКУПАТЕЛИ</h2>
+    <div class="why-grid">
+      {% for review in reviews %}
+      <div class="why-card">
+        {% if review.image %}<img src="{{ review.image }}" alt="Фото лодки ЛОСЬ 400 — покупатель {{ review.name }}" style="width:100%;height:180px;object-fit:cover;border-radius:4px;margin-bottom:14px;">{% endif %}
+        <div style="color:#f5a623;font-size:18px;letter-spacing:2px;margin-bottom:12px;">★★★★★</div>
+        <p style="font-size:15px;line-height:1.7;margin-bottom:14px;">«{{ review.text }}»</p>
+        <p style="font-size:13px;color:var(--muted);"><strong style="color:var(--light);">{{ review.name }}</strong> · {{ review.source }} · {{ review.date }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <p style="text-align:center;margin-top:24px;"><a href="/otzyvy/" style="color:var(--muted);font-size:14px;">Все отзывы →</a></p>
+  </section>
+
   <!-- CTA -->
   <section class="cta-section">
     <div class="section-tag" style="display:inline-block;">Купить</div>
     <h2 class="cta-title">ЛОСЬ 400 БАЗОВАЯ</h2>
     <div class="cta-price">140 000 ₽</div>
-    <p style="color:var(--muted);font-size:14px;margin-bottom:32px;"><span class="status-dot"></span>В наличии · Самовывоз Вологда, район Емельяново</p>
+    <p style="color:var(--muted);font-size:14px;margin-bottom:8px;"><span class="status-dot"></span>В наличии · Самовывоз: Вологда, район Емельяново</p>
+    <p style="color:var(--muted);font-size:13px;margin-bottom:32px;">Доставка в Череповец (130 км), Ярославль (190 км) и другие города — транспортной компанией. Уточняйте условия по телефону.</p>
     <div class="cta-btns">
       <a href="tel:{{ site.phone }}" class="btn-primary" style="font-size:16px;">Позвонить и заказать</a>
       <a href="/#order" class="btn-secondary">Оставить заявку</a>

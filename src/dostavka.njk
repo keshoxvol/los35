@@ -1,0 +1,202 @@
+---
+layout: layouts/page.njk
+title: "Доставка и оплата лодки ЛОСЬ 400 | Вологда, Череповец, Ярославль, Шексна"
+description: "Доставка лодок ЛОСЬ 400 по Вологодской и Ярославской области. Самовывоз в Вологде. Доставим в Череповец, Шексну, Ярославль. Оплата картой, наличными, по счёту."
+robots: "index, follow"
+permalink: /dostavka/
+---
+
+<style>
+.delivery-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px 60px;
+}
+.delivery-page h1 {
+  font-size: clamp(26px, 5vw, 40px);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+.delivery-page .sub {
+  color: var(--muted);
+  margin-bottom: 56px;
+  font-size: 15px;
+}
+.delivery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+@media (max-width: 768px) {
+  .delivery-grid { grid-template-columns: 1fr; }
+}
+.delivery-card {
+  background: var(--dark);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 28px 32px;
+}
+.delivery-card-icon {
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+.delivery-card h2 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 12px;
+}
+.delivery-card p {
+  color: var(--light);
+  font-size: 15px;
+  line-height: 1.65;
+}
+.delivery-card .note {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.delivery-card ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  color: var(--light);
+  font-size: 15px;
+  line-height: 1.8;
+}
+.delivery-card-full {
+  grid-column: span 2;
+}
+@media (max-width: 768px) {
+  .delivery-card-full { grid-column: span 1; }
+}
+
+.payment-section {
+  margin-top: 48px;
+}
+.payment-section h2 {
+  font-size: 22px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+.payment-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .payment-grid { grid-template-columns: repeat(2, 1fr); }
+}
+.payment-item {
+  background: var(--dark);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  padding: 20px 16px;
+  text-align: center;
+}
+.payment-item .p-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.payment-item span {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--light);
+}
+
+.delivery-cta {
+  margin-top: 48px;
+  background: var(--dark);
+  border: 1px solid rgba(232,133,26,0.25);
+  border-radius: 10px;
+  padding: 36px 32px;
+  text-align: center;
+}
+.delivery-cta p {
+  color: var(--muted);
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.delivery-cta .cta-btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+</style>
+
+<div class="delivery-page">
+  <h1>Доставка и оплата</h1>
+  <p class="sub">Заберите самостоятельно или закажите доставку — довезём до вашего города</p>
+
+  <div class="delivery-grid">
+
+    <div class="delivery-card">
+      <div class="delivery-card-icon">📍</div>
+      <h2>Самовывоз</h2>
+      <p>Производство и склад находятся в Вологде, район Емельяново. Забрать лодку можно самостоятельно после согласования времени.</p>
+      <p class="note">Адрес: {{ site.address }}<br>Тел.: {{ site.phoneDisplay }}</p>
+    </div>
+
+    <div class="delivery-card">
+      <div class="delivery-card-icon">🚚</div>
+      <h2>Доставка нашим транспортом</h2>
+      <p>Привозим лодки в следующие города:</p>
+      <ul>
+        <li>Вологда</li>
+        <li>Череповец (~130 км)</li>
+        <li>Шексна (~90 км)</li>
+        <li>Ярославль (~190 км)</li>
+      </ul>
+      <p class="note">Стоимость уточняйте при заказе.</p>
+    </div>
+
+    <div class="delivery-card delivery-card-full">
+      <div class="delivery-card-icon">🏭</div>
+      <h2>Транспортные компании — в другие регионы</h2>
+      <p>В города за пределами Вологодской и Ярославской областей отправляем через транспортные компании — ПЭК и другие. Лодка передаётся в ТК в Вологде, получаете в терминале вашего города.</p>
+      <p class="note">Стоимость и сроки зависят от тарифа транспортной компании. Помогаем оформить отправку.</p>
+    </div>
+
+  </div>
+
+  <div class="payment-section">
+    <h2>Способы оплаты</h2>
+    <div class="payment-grid">
+      <div class="payment-item">
+        <div class="p-icon">💳</div>
+        <span>Банковская карта</span>
+      </div>
+      <div class="payment-item">
+        <div class="p-icon">💵</div>
+        <span>Наличные</span>
+      </div>
+      <div class="payment-item">
+        <div class="p-icon">📱</div>
+        <span>QR-код / СБП</span>
+      </div>
+      <div class="payment-item">
+        <div class="p-icon">📄</div>
+        <span>По счёту (для юр. лиц)</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="delivery-cta">
+    <p>Уточните наличие, стоимость доставки и удобное время — позвоните нам или оставьте заявку.</p>
+    <div class="cta-btns">
+      <a href="tel:{{ site.phone }}" class="btn-primary">Позвонить: {{ site.phoneDisplay }}</a>
+      <a href="/#order" class="btn-secondary">Оставить заявку</a>
+    </div>
+  </div>
+</div>

@@ -6,6 +6,36 @@
 
   .nav-links {
     display: none;
+    position: fixed;
+    top: 73px;
+    left: 0;
+    right: 0;
+    background: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(12px);
+    flex-direction: column;
+    gap: 0;
+    padding: 16px 0 24px;
+    border-bottom: 1px solid rgba(42, 45, 50, 0.8);
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 14px 24px;
+    font-size: 13px;
+  }
+
+  .nav-links .nav-cta {
+    margin: 12px 24px 0;
+    display: block;
+    text-align: center;
+  }
+
+  nav.nav-open .nav-links {
+    display: flex;
+  }
+
+  .nav-burger {
+    display: flex;
   }
 
   section {
@@ -103,5 +133,62 @@
 @media (max-width: 768px) {
   .lead-form-row {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ─── STICKY BUTTONS (mobile) ─── */
+.sticky-btns {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .sticky-btns {
+    display: flex;
+    gap: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+    white-space: nowrap;
+  }
+
+  .sticky-cta,
+  .sticky-vk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 50px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .sticky-cta {
+    background: var(--amber);
+    color: #0a0a0a;
+    box-shadow: 0 8px 32px rgba(232, 133, 26, 0.45);
+  }
+
+  .sticky-vk {
+    background: #0077FF;
+    color: #fff;
+    box-shadow: 0 8px 32px rgba(0, 119, 255, 0.4);
+  }
+
+  .sticky-cta:active {
+    transform: scale(0.96);
+    box-shadow: 0 4px 16px rgba(232, 133, 26, 0.35);
+  }
+
+  .sticky-vk:active {
+    transform: scale(0.96);
+    box-shadow: 0 4px 16px rgba(0, 119, 255, 0.3);
   }
 }
