@@ -4,7 +4,8 @@
   "description": "ЛОСЬ 400 — сайт на Eleventy",
   "scripts": {
     "dev": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy"
+    "build": "npx @11ty/eleventy",
+    "api": "node api/server.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2"

@@ -2,9 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('leadForm');
   if (!form) return;
 
-  const TG_TOKEN = window.ENV && window.ENV.TG_TOKEN;
-  const TG_CHAT = window.ENV && window.ENV.TG_CHAT;
-
   form.addEventListener('submit', async function(e) {
     e.preventDefault();
     const name    = document.getElementById('lf-name').value.trim();
@@ -20,27 +17,18 @@ document.addEventListener('DOMContentLoaded', function() {
     btn.textContent = 'Отправка...';
     errEl.style.display = 'none';
 
-    const text = [
-      '🛥 <b>Новая заявка с сайта ЛОСЬ 400</b>',
-      '',
-      `👤 <b>Имя:</b> ${name}`,
-      `📞 <b>Телефон:</b> ${phone}`,
-      model   ? `⛵ <b>Модель:</b> ${model}` : '',
-      comment ? `💬 <b>Комментарий:</b> ${comment}` : '',
-    ].filter(Boolean).join('\n');
-
     try {
-      const res = await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
+      const res = await fetch('/api/lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chat_id: TG_CHAT, text, parse_mode: 'HTML' })
+        body: JSON.stringify({ name, phone, model, comment })
       });
       const data = await res.json();
       if (data.ok) {
         document.getElementById('leadForm').style.display = 'none';
         document.getElementById('lf-success').style.display = 'block';
       } else {
-        throw new Error('TG error');
+        throw new Error(data.error || 'Ошибка');
       }
     } catch {
       btn.disabled = false;
