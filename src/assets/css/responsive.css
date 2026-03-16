@@ -136,59 +136,74 @@
   }
 }
 
-/* ─── STICKY BUTTONS (mobile) ─── */
+/* ─── STICKY BUTTONS ─── */
 .sticky-btns {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  bottom: 28px;
+  right: 24px;
+  z-index: 200;
 }
 
+.sticky-cta,
+.sticky-vk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 13px 22px;
+  border-radius: 50px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+
+.sticky-cta {
+  background: var(--amber);
+  color: #0a0a0a;
+  box-shadow: 0 8px 32px rgba(232, 133, 26, 0.45);
+}
+
+.sticky-vk {
+  background: #0077FF;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0, 119, 255, 0.4);
+}
+
+.sticky-cta:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 36px rgba(232, 133, 26, 0.55);
+}
+
+.sticky-vk:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 36px rgba(0, 119, 255, 0.5);
+}
+
+.sticky-cta:active {
+  transform: scale(0.96);
+  box-shadow: 0 4px 16px rgba(232, 133, 26, 0.35);
+}
+
+.sticky-vk:active {
+  transform: scale(0.96);
+  box-shadow: 0 4px 16px rgba(0, 119, 255, 0.3);
+}
+
+/* На мобиле — по центру снизу, горизонтально */
 @media (max-width: 1024px) {
   .sticky-btns {
-    display: flex;
-    gap: 10px;
-    position: fixed;
+    flex-direction: row;
     bottom: 20px;
+    right: auto;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 200;
-    white-space: nowrap;
-  }
-
-  .sticky-cta,
-  .sticky-vk {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    font-family: var(--font-body);
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 13px 22px;
-    border-radius: 50px;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-
-  .sticky-cta {
-    background: var(--amber);
-    color: #0a0a0a;
-    box-shadow: 0 8px 32px rgba(232, 133, 26, 0.45);
-  }
-
-  .sticky-vk {
-    background: #0077FF;
-    color: #fff;
-    box-shadow: 0 8px 32px rgba(0, 119, 255, 0.4);
-  }
-
-  .sticky-cta:active {
-    transform: scale(0.96);
-    box-shadow: 0 4px 16px rgba(232, 133, 26, 0.35);
-  }
-
-  .sticky-vk:active {
-    transform: scale(0.96);
-    box-shadow: 0 4px 16px rgba(0, 119, 255, 0.3);
   }
 }
