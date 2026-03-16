@@ -1,7 +1,7 @@
 ---
 title: "Купить лодку в Шексне: доставка ЛОСЬ 400 из Вологды"
 description: "Купить моторную лодку из ПНД в посёлке Шексна. Доставка ЛОСЬ 400 от производителя из Вологды — 90 км. Для рыбалки на Шекснинском водохранилище и реке Шексна."
-date: 2026-11-18
+date: 2025-11-05
 tags:
   - post
   - советы
@@ -65,9 +65,10 @@ tags:
 
 ## Читайте также
 
-- [Рыбалка на Шекснинском водохранилище из Череповца и Вологды](/blog/articles/rybalka-na-sheksninskom-vdhr/)
-- [Купить лодку в Череповце: доставка ЛОСЬ 400](/blog/articles/kupit-lodku-v-cherepovce/)
-- [Какой мотор выбрать для лодки 4 метра](/blog/articles/kakoy-motor-dlya-lodki-4-metra/)
-- [Лодка без регистрации в ГИМС: что разрешено в 2025 году](/blog/articles/lodka-bez-registracii-gims/)
+- [Где спустить лодку в Шексне: слипы и съезды к воде](/blog/articles/gde-spustit-lodku-v-sheksne/)
+- [Маршруты по Шекснинскому водохранилищу на лодке](/blog/articles/marshruty-sheksninskoe-vodokhranilishche/)
+- [Рыбалка в Шексне весной: открытие сезона](/blog/articles/rybalka-sheksna-vesna/)
+- [Какую лодку выбрать для Шекснинского водохранилища](/blog/articles/kakuyu-lodku-dlya-sheksny/)
+- [Рыбалка на Шекснинском водохранилище: судак, щука, снасти](/blog/articles/rybalka-na-sheksninskom-vdhr/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya.html)
+[Лодка в Шексну — цена и доставка →](/sheksna/)
