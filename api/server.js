@@ -4,30 +4,37 @@ const http  = require('http');
 const https = require('https');
 require('dotenv').config({ path: require('path').join(__dirname, '..', '.env') });
 
-const PORT     = process.env.API_PORT || 3000;
-const TG_TOKEN = process.env.TG_TOKEN;
-const TG_CHAT  = process.env.TG_CHAT;
+const PORT    = process.env.API_PORT || 3000;
+const CRM_URL = process.env.CRM_URL;
 
-if (!TG_TOKEN || !TG_CHAT) {
-  console.error('Ошибка: не заданы TG_TOKEN или TG_CHAT в .env');
+if (!CRM_URL) {
+  console.error('Ошибка: не задан CRM_URL в .env');
   process.exit(1);
 }
 
-function sendTelegram(text) {
+function mapModel(raw) {
+  if (!raw) return 'UNDEFINED';
+  if (raw.includes('Сохатый') || raw.includes('GX') || raw.includes('рубк')) return 'LOS_400_GX';
+  if (raw.includes('400') || raw.includes('базов')) return 'LOS_400';
+  return 'UNDEFINED';
+}
+
+function postToCrm(payload) {
   return new Promise((resolve, reject) => {
-    const body = JSON.stringify({ chat_id: TG_CHAT, text, parse_mode: 'HTML' });
-    const req = https.request({
-      hostname: 'api.telegram.org',
-      path: `/bot${TG_TOKEN}/sendMessage`,
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body) }
+    const body = JSON.stringify(payload);
+    const url  = new URL('/api/public/orders', CRM_URL);
+    const lib  = url.protocol === 'https:' ? https : http;
+
+    const req = lib.request({
+      hostname: url.hostname,
+      port:     url.port || (url.protocol === 'https:' ? 443 : 80),
+      path:     url.pathname,
+      method:   'POST',
+      headers:  { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body) }
     }, res => {
       let data = '';
       res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        try { resolve(JSON.parse(data)); }
-        catch { reject(new Error('Bad JSON from Telegram')); }
-      });
+      res.on('end', () => resolve({ status: res.statusCode, body: data }));
     });
     req.on('error', reject);
     req.write(body);
@@ -48,26 +55,24 @@ const server = http.createServer(async (req, res) => {
     req.on('end', async () => {
       try {
         const { name, phone, model, comment } = JSON.parse(raw);
-        if (!name || !phone) {
+        if (!phone) {
           res.writeHead(400, { 'Content-Type': 'application/json' });
-          res.end(JSON.stringify({ ok: false, error: 'Имя и телефон обязательны' }));
+          res.end(JSON.stringify({ ok: false, error: 'Телефон обязателен' }));
           return;
         }
-        const text = [
-          '🛥 <b>Новая заявка с сайта ЛОСЬ 400</b>',
-          '',
-          `👤 <b>Имя:</b> ${name}`,
-          `📞 <b>Телефон:</b> ${phone}`,
-          model   ? `⛵ <b>Модель:</b> ${model}`        : '',
-          comment ? `💬 <b>Комментарий:</b> ${comment}` : '',
-        ].filter(Boolean).join('\n');
 
-        const tg = await sendTelegram(text);
-        if (tg.ok) {
+        const crm = await postToCrm({
+          name:  name  || undefined,
+          phone,
+          model: mapModel(model),
+          notes: comment || undefined
+        });
+
+        if (crm.status === 201) {
           res.writeHead(200, { 'Content-Type': 'application/json' });
           res.end(JSON.stringify({ ok: true }));
         } else {
-          throw new Error(JSON.stringify(tg));
+          throw new Error(`CRM вернул ${crm.status}: ${crm.body}`);
         }
       } catch (err) {
         console.error('lead error:', err);
