@@ -478,7 +478,7 @@ pageJs:
     <div class="section-tag">Полезные статьи</div>
     <h2 class="section-title">УЗНАЙТЕ БОЛЬШЕ<br>О ЛОДКАХ ИЗ ПНД</h2>
     <div class="why-grid">
-      {% for post in collections.post | limit(4) %}
+      {% for post in collections.post | limit(3) %}
       <div class="why-card">
         <h3 style="font-size:16px;line-height:1.4;margin-bottom:12px;">
           <a href="{{ post.url }}" style="color:var(--light);text-decoration:none;">{{ post.data.title | replace(" | ЛОСЬ 400", "") }}</a>
