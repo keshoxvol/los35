@@ -96,4 +96,4 @@ tags:
 - [Рыбалка на реке Вологда](/blog/articles/rybalka-na-reke-vologda/)
 - [Что взять на рыбалку с лодки: чек-лист](/blog/articles/chto-vzyat-na-rybalku-checklist/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)
+[ЛОСЬ 400 в Вологде — купить от производителя →](/vologda/)

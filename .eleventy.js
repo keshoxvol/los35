@@ -20,6 +20,12 @@ eleventyConfig.addFilter("dateRu", function(date) {
     return collectionApi.getFilteredByTag("post").sort((a, b) => b.date - a.date);
   });
 
+  eleventyConfig.addCollection("sitePages", function(collectionApi) {
+    return collectionApi.getAll()
+      .filter(item => item.data.sitemapPriority !== undefined)
+      .sort((a, b) => (b.data.sitemapPriority || 0) - (a.data.sitemapPriority || 0));
+  });
+
   return {
     dir: { input: "src", output: "_site" },
     templateFormats: ["njk", "md", "html"],

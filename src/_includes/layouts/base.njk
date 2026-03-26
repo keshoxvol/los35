@@ -19,7 +19,7 @@
   <meta name="description" content="{{ description }}">
   {% if keywords %}<meta name="keywords" content="{{ keywords }}">{% endif %}
   <meta name="robots" content="{{ robots or 'index, follow' }}">
-  {% if canonical %}<link rel="canonical" href="{{ canonical }}">{% endif %}
+  <link rel="canonical" href="{{ site.url }}{{ canonical or page.url }}">
   <!-- Open Graph -->
   <meta property="og:type" content="{{ ogType or 'website' }}">
   <meta property="og:locale" content="ru_RU">
@@ -50,14 +50,15 @@
   {
     "@context": "https://schema.org",
     "@type": "Article",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ site.url }}{{ page.url }}" },
     "headline": {{ title | dump | safe }},
     "description": {{ description | dump | safe }},
+    "image": "{{ site.url }}{{ ogImage or '/img/og-default.jpg' }}",
     "datePublished": "{{ date | dateIso }}",
-    "url": "{{ site.url }}{{ page.url }}",
-    "publisher": {
-      "@type": "Organization",
-      "name": {{ site.company | dump | safe }}
-    }
+    "dateModified": "{{ date | dateIso }}",
+    "author": { "@type": "Organization", "name": {{ site.company | dump | safe }} },
+    "publisher": { "@type": "Organization", "name": {{ site.company | dump | safe }} },
+    "url": "{{ site.url }}{{ page.url }}"
   }
   </script>{% endif %}
   {% if includeFaq %}<script type="application/ld+json">
