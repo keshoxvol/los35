@@ -1,6 +1,7 @@
 require('dotenv').config();
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"src/img": "img"});
+  eleventyConfig.addPassthroughCopy({"src/favicon.png": "favicon.png"});
   eleventyConfig.addPassthroughCopy({"src/assets/css": "assets/css"});
   eleventyConfig.addPassthroughCopy({"src/assets/js": "assets/js"});
 
