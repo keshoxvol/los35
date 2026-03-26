@@ -96,4 +96,4 @@ tags:
 - [Лодка без регистрации в ГИМС: что разрешено в 2025 году](/blog/articles/lodka-bez-registracii-gims/)
 - [Как хранить моторную лодку зимой](/blog/articles/kak-hranit-lodku-zimoy/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya.html)
+[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

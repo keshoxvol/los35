@@ -81,4 +81,4 @@ tags:
 - [Лодка без регистрации в ГИМС: что разрешено в 2025 году](/blog/articles/lodka-bez-registracii-gims/)
 - [Какой мотор выбрать для лодки 4 метра](/blog/articles/kakoy-motor-dlya-lodki-4-metra/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya.html)
+[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

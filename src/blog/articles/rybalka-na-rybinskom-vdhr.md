@@ -67,4 +67,4 @@ tags:
 - [Рыбалка на Шекснинском водохранилище](/blog/articles/rybalka-na-sheksninskom-vdhr/)
 - [Что взять на рыбалку с лодки: чек-лист](/blog/articles/chto-vzyat-na-rybalku-checklist/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya.html)
+[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

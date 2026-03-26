@@ -79,4 +79,4 @@ tags:
 - [Первый выезд на моторной лодке](/blog/articles/pervyy-vyyezd-na-motornoy-lodke/)
 - [Как спустить лодку на воду в одиночку](/blog/articles/kak-spustit-lodku-v-odinochku/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya.html)
+[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

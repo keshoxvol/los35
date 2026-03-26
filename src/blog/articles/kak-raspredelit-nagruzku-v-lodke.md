@@ -73,4 +73,4 @@ tags:
 - [Отдых с детьми на лодке](/blog/articles/otdykh-s-detmi-na-lodke/)
 - [Лодка для семейного отдыха](/blog/articles/lodka-dlya-semi/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya.html)
+[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

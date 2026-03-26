@@ -121,4 +121,4 @@ tags:
 - [Как выбрать эхолот для рыбалки с лодки](/blog/articles/kak-vybrat-ekholot/)
 - [Первый выезд на моторной лодке](/blog/articles/pervyy-vyyezd-na-motornoy-lodke/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya.html)
+[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

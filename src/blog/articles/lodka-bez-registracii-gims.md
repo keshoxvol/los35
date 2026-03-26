@@ -69,4 +69,4 @@ tags:
 - [Как выбрать прицеп для лодки](/blog/articles/kak-vybrat-pricep-dlya-lodki/)
 - [Первый выезд на моторной лодке](/blog/articles/pervyy-vyyezd-na-motornoy-lodke/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya.html)
+[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

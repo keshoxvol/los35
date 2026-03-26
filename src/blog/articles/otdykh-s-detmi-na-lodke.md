@@ -87,4 +87,4 @@ tags:
 - [Как правильно распределить нагрузку в лодке](/blog/articles/kak-raspredelit-nagruzku-v-lodke/)
 - [Первый выезд на моторной лодке](/blog/articles/pervyy-vyyezd-na-motornoy-lodke/)
 
-[Посмотреть ЛОСЬ 400 Сохатый с рубкой →](/los-400-sokhatyy.html)
+[Посмотреть ЛОСЬ 400 Сохатый с рубкой →](/los-400-sokhatyy/)

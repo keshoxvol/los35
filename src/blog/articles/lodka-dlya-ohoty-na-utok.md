@@ -76,4 +76,4 @@ tags:
 - [Как правильно распределить нагрузку в лодке](/blog/articles/kak-raspredelit-nagruzku-v-lodke/)
 - [Что взять на рыбалку с лодки: чек-лист](/blog/articles/chto-vzyat-na-rybalku-checklist/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya.html)
+[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

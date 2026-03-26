@@ -89,4 +89,4 @@ tags:
 - [Какой мотор выбрать для лодки 4 метра](/blog/articles/kakoy-motor-dlya-lodki-4-metra/)
 - [Как выбрать лодку из ПНД: советы производителя](/blog/articles/kak-vybrat-lodku-iz-pnd/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya.html)
+[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

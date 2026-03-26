@@ -76,4 +76,4 @@ tags:
 - [Почему ПНД — лучший материал для мелководных рек](/blog/articles/pnd-dlya-melkovodnykh-rek/)
 - [Как выбрать лодку из ПНД: советы производителя](/blog/articles/kak-vybrat-lodku-iz-pnd/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya.html)
+[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

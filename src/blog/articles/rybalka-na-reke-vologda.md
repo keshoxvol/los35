@@ -69,4 +69,4 @@ tags:
 - [Рыбалка на Кубенском озере](/blog/articles/rybalka-na-kubenskom-ozere/)
 - [Что взять на рыбалку с лодки: чек-лист](/blog/articles/chto-vzyat-na-rybalku-checklist/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya.html)
+[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

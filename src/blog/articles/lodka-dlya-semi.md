@@ -81,4 +81,4 @@ tags:
 - [Как правильно распределить нагрузку в лодке](/blog/articles/kak-raspredelit-nagruzku-v-lodke/)
 - [Лодка без регистрации в ГИМС: что разрешено в 2025 году](/blog/articles/lodka-bez-registracii-gims/)
 
-[Посмотреть ЛОСЬ 400 Сохатый с рубкой →](/los-400-sokhatyy.html)
+[Посмотреть ЛОСЬ 400 Сохатый с рубкой →](/los-400-sokhatyy/)

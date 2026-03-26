@@ -65,4 +65,4 @@ tags:
 - [Лучшие реки Вологодской области для рыбалки с лодкой](/blog/articles/luchshie-reki-vologodskoy/)
 - [Как спустить лодку на воду в одиночку](/blog/articles/kak-spustit-lodku-v-odinochku/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya.html)
+[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

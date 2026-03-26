@@ -69,4 +69,4 @@ tags:
 - [Что взять на рыбалку с лодки: чек-лист](/blog/articles/chto-vzyat-na-rybalku-checklist/)
 - [Как выбрать эхолот для рыбалки с лодки](/blog/articles/kak-vybrat-ekholot/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya.html)
+[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

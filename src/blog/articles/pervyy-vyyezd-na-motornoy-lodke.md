@@ -78,4 +78,4 @@ tags:
 - [Лодка без регистрации в ГИМС: что разрешено в 2025 году](/blog/articles/lodka-bez-registracii-gims/)
 - [Что взять на рыбалку с лодки: чек-лист](/blog/articles/chto-vzyat-na-rybalku-checklist/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya.html)
+[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

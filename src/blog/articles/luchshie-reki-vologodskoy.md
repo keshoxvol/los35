@@ -95,4 +95,4 @@ tags:
 - [Рыбалка на Белом озере](/blog/articles/rybalka-na-belom-ozere/)
 - [Рыбалка в Вологодском районе: ближние водоёмы](/blog/articles/rybalka-vologodskiy-rayon/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya.html)
+[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

@@ -86,4 +86,4 @@ tags:
 - [Что взять на рыбалку с лодки: чек-лист](/blog/articles/chto-vzyat-na-rybalku-checklist/)
 - [Лучшие реки Вологодской области для рыбалки с лодкой](/blog/articles/luchshie-reki-vologodskoy/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya.html)
+[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)
