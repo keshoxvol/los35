@@ -83,9 +83,9 @@ tags:
 
 ## Читайте также
 
+- [Плюсы и минусы лодок из ПНД: честный разбор](/blog/articles/plyusy-i-minusy-lodok-iz-pnd/)
+- [Пластиковая лодка для рыбалки: какой материал выбрать](/blog/articles/plastikovaya-lodka-dlya-rybalki/)
 - [Как выбрать лодку из ПНД: советы производителя](/blog/articles/kak-vybrat-lodku-iz-pnd/)
-- [ПНД или стеклопластик: сравнение материалов корпуса](/blog/articles/pnd-vs-stekloplastik/)
-- [Что такое ПНД-пластик и почему из него делают лодки](/blog/articles/chto-takoe-pnd-plastik/)
 - [Противоударность ПНД: почему лодку из полиэтилена нельзя пробить](/blog/articles/protivodarnost-pnd/)
 
 [Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

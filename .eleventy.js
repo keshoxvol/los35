@@ -16,6 +16,15 @@ eleventyConfig.addFilter("dateRu", function(date) {
     return String(str).replace(/<[^>]*>/g, '');
   });
 
+  eleventyConfig.addFilter("limit", function(array, n) {
+    return array.slice(0, n);
+  });
+
+  eleventyConfig.addFilter("truncate", function(str, n) {
+    if (!str) return '';
+    return str.length > n ? str.slice(0, n).trimEnd() + '…' : str;
+  });
+
   eleventyConfig.addCollection("posts", function(collectionApi) {
     return collectionApi.getFilteredByTag("post").sort((a, b) => b.date - a.date);
   });

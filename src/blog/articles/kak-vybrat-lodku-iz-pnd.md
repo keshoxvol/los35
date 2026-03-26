@@ -106,8 +106,8 @@ tags:
 
 ## Читайте также
 
+- [Плюсы и минусы лодок из ПНД: честный разбор](/blog/articles/plyusy-i-minusy-lodok-iz-pnd/)
 - [Лодка из ПНД или алюминиевая: что лучше](/blog/articles/pnd-vs-alyuminiy/)
 - [ПНД или стеклопластик: сравнение материалов](/blog/articles/pnd-vs-stekloplastik/)
 - [Что такое ПНД-пластик и почему из него делают лодки](/blog/articles/chto-takoe-pnd-plastik/)
-- [Какой мотор выбрать для лодки 4 метра](/blog/articles/kakoy-motor-dlya-lodki-4-metra/)
 - [Лодка без регистрации в ГИМС](/blog/articles/lodka-bez-registracii-gims/)
