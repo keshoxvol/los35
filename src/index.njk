@@ -513,9 +513,12 @@ pageJs:
           <option value="Не определился">Не определился</option>
         </select>
         <textarea id="lf-comment" placeholder="Вопрос или комментарий (необязательно)"></textarea>
+        <label class="lead-form-consent">
+          <input type="checkbox" id="lf-consent" required>
+          <span>Я согласен на <a href="/privacy/" target="_blank">обработку персональных данных</a></span>
+        </label>
         <button type="submit" class="lead-form-submit" id="lf-submit">ОТПРАВИТЬ ЗАЯВКУ</button>
         <p class="lead-form-error" id="lf-error">Что-то пошло не так. Позвоните нам напрямую: {{ site.phoneDisplay }}</p>
-        <p class="lead-form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
       </form>
       <div class="lead-form-success" id="lf-success">
         ✓ Заявка принята!<br>

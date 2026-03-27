@@ -11,7 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const btn     = document.getElementById('lf-submit');
     const errEl   = document.getElementById('lf-error');
 
+    const consent = document.getElementById('lf-consent');
     if (!name || !phone) return;
+    if (consent && !consent.checked) return;
 
     btn.disabled = true;
     btn.textContent = 'Отправка...';

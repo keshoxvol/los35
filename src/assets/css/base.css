@@ -30,3 +30,56 @@ body::before {
   z-index: 1000;
   opacity: 0.5;
 }
+
+/* ── Cookie banner ── */
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: #1a1a1a;
+  border-top: 1px solid #333;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--muted);
+  transition: opacity .3s;
+}
+#cookie-banner a { color: var(--amber); text-decoration: underline; }
+#cookie-ok {
+  background: var(--amber);
+  color: #000;
+  border: none;
+  padding: 7px 18px;
+  font-family: var(--font-head);
+  font-size: 12px;
+  letter-spacing: .05em;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* ── Consent checkbox in lead form ── */
+.lead-form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--muted);
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+.lead-form-consent input[type="checkbox"] {
+  margin-top: 2px;
+  accent-color: var(--amber);
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.lead-form-consent a { color: var(--amber); text-decoration: underline; }
