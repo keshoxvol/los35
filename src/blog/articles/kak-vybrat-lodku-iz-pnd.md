@@ -111,3 +111,4 @@ tags:
 - [ПНД или стеклопластик: сравнение материалов](/blog/articles/pnd-vs-stekloplastik/)
 - [Что такое ПНД-пластик и почему из него делают лодки](/blog/articles/chto-takoe-pnd-plastik/)
 - [Лодка без регистрации в ГИМС](/blog/articles/lodka-bez-registracii-gims/)
+- [Как мы делаем лодки: производство ЛОСЬ 400 в Вологде](/proizvodstvo/)

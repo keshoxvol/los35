@@ -85,5 +85,6 @@ tags:
 - [Плюсы и минусы лодок из ПНД: честный разбор](/blog/articles/plyusy-i-minusy-lodok-iz-pnd/)
 - [Лодка из ПНД или алюминиевая: что лучше для рыбалки](/blog/articles/pnd-vs-alyuminiy/)
 - [Как выбрать лодку из ПНД: советы производителя](/blog/articles/kak-vybrat-lodku-iz-pnd/)
+- [Как мы делаем лодки: производство ЛОСЬ 400 в Вологде](/proizvodstvo/)
 
 [Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

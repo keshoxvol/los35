@@ -1,0 +1,217 @@
+---
+layout: layouts/base.njk
+title: "Производство лодок из ПНД — собственный цех в Вологде | ЛОСЬ 400"
+description: "Смотрите как мы делаем лодки ЛОСЬ 400. Собственное производство из листового ПНД 8 мм в Вологде. Сварные швы, противоскользящий настил, доработки под заказ."
+keywords: "производство лодок пнд вологда, как делают лодки из пнд, производитель лодок вологда, лодки из полиэтилена производство"
+robots: "index, follow"
+canonical: "/proizvodstvo/"
+sitemapPriority: 0.8
+pageCss:
+  - /assets/css/sections.css
+  - /assets/css/home/hero.css
+  - /assets/css/home/why.css
+  - /assets/css/home/gallery.css
+  - /assets/css/home/cta.css
+pageJs:
+  - /assets/js/lightbox.js
+schema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "ManufacturingBusiness",
+    "name": "ООО «Вологодский Судостроительный Завод»",
+    "description": "Производство лодок из ПНД-пластика в Вологде. Собственный цех, сварные швы, индивидуальные доработки.",
+    "url": "https://лось35.рф/proizvodstvo/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Вологда",
+      "addressCountry": "RU"
+    },
+    "telephone": "+78172263277"
+  }
+---
+
+<script>
+window.GALLERY_PHOTOS = [
+  "production/prod-1-nos.jpg",
+  "production/prod-2-sboku.jpg",
+  "production/prod-3-stapel.jpg",
+  "production/prod-4-sverhu.jpg",
+  "production/prod-5-reshetka.jpg"
+];
+</script>
+
+<!-- HERO -->
+<section class="hero" style="min-height:60vh;">
+  <div class="hero-content" style="padding-top:80px;">
+    <div class="eyebrow">Вологда · Собственный цех · С 2023 года</div>
+    <h1>НАШЕ<br><span>ПРОИЗВОДСТВО</span></h1>
+    <div class="hero-sub">Как мы делаем ЛОСЬ 400</div>
+    <p class="hero-desc">Каждая лодка варится вручную из листового ПНД толщиной 8 мм. Никаких литьевых форм и конвейера — только ручная сварка, контроль геометрии и доработка под заказ.</p>
+    <div class="hero-actions">
+      <a href="/#order" class="btn-primary">Заказать лодку</a>
+      <a href="/#specs" class="btn-ghost">Характеристики</a>
+    </div>
+  </div>
+</section>
+
+<!-- ПРОЦЕСС -->
+<section style="background: var(--dark); padding: 80px 80px;">
+  <div class="section-tag">Как это работает</div>
+  <h2 class="section-title">ОТ ЛИСТА ПНД<br><span style="color:var(--amber)">ДО ЛОДКИ</span></h2>
+  <p class="section-desc">Четыре этапа — от сырья до готового изделия с вашими доработками</p>
+  <div class="why-grid" style="margin-top:0;">
+    <div class="why-card fade-up">
+      <div class="why-num">01</div>
+      <div class="why-title">Раскрой</div>
+      <div class="why-desc">Листы ПНД 8 мм режем на ЧПУ-станке по чертежу. Детали корпуса, транец, шпангоуты — всё точно по размеру без ручной подгонки.</div>
+    </div>
+    <div class="why-card fade-up">
+      <div class="why-num">02</div>
+      <div class="why-title">Сборка на стапеле</div>
+      <div class="why-desc">Детали собираем в деревянном стапеле — он держит геометрию корпуса пока варятся швы. Лодка не ведёт, борта стоят ровно.</div>
+    </div>
+    <div class="why-card fade-up">
+      <div class="why-num">03</div>
+      <div class="why-title">Сварка ПНД</div>
+      <div class="why-desc">Швы варим горячим воздухом с присадочным прутком ПНД. Соединение монолитное — при ударе рвётся материал, но не шов.</div>
+    </div>
+    <div class="why-card fade-up">
+      <div class="why-num">04</div>
+      <div class="why-title">Доработка и проверка</div>
+      <div class="why-desc">Устанавливаем противоскользящий настил, крепления для мотора, проверяем геометрию и качество швов. Индивидуальные доработки — на этом этапе.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ФОТОГАЛЕРЕЯ -->
+<section class="gallery" style="padding: 80px 80px;">
+  <div class="section-tag">Фото с производства</div>
+  <h2 class="section-title">ЛОСЬ 400<br><span style="color:var(--amber)">В ЦЕХЕ</span></h2>
+  <p class="section-desc">Реальные фото процесса — корпус на стапеле, швы, противоскользящий настил</p>
+
+  <!-- 1 большое + 2 справа -->
+  <div style="display:grid; grid-template-columns:2fr 1fr; gap:8px; margin-top:48px; height:420px;">
+    <div class="gallery-item" onclick="openLightbox(0)" style="height:420px;">
+      <img src="/img/production/prod-1-nos.jpg" alt="Корпус лодки ЛОСЬ 400 — вид с носа, цех Вологда">
+    </div>
+    <div style="display:grid; grid-template-rows:1fr 1fr; gap:8px;">
+      <div class="gallery-item" onclick="openLightbox(1)" style="height:206px;">
+        <img src="/img/production/prod-2-sboku.jpg" alt="ЛОСЬ 400 — вид сбоку, противоскользящий настил">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(2)" style="height:206px;">
+        <img src="/img/production/prod-3-stapel.jpg" alt="Сборка корпуса лодки на стапеле">
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 фото + карточка с цифрами -->
+  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-top:8px; height:280px;">
+    <div class="gallery-item" onclick="openLightbox(3)" style="height:280px;">
+      <img src="/img/production/prod-4-sverhu.jpg" alt="ЛОСЬ 400 — вид сверху, готовый корпус в цехе">
+    </div>
+    <div class="gallery-item" onclick="openLightbox(4)" style="height:280px;">
+      <img src="/img/production/prod-5-reshetka.jpg" alt="Противоскользящий настил лодки ЛОСЬ 400 крупный план">
+    </div>
+    <div style="background:var(--surface); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px; padding:32px; height:280px; box-sizing:border-box;">
+      <div style="text-align:center;">
+        <div style="font-family:var(--font-display); font-size:52px; color:var(--amber); line-height:1;">8 мм</div>
+        <div style="color:var(--muted); font-size:11px; letter-spacing:2px; text-transform:uppercase; margin-top:6px;">Толщина листа ПНД</div>
+      </div>
+      <div style="width:40px; height:1px; background:var(--border);"></div>
+      <div style="text-align:center;">
+        <div style="font-family:var(--font-display); font-size:52px; color:var(--white); line-height:1;">200 кг</div>
+        <div style="color:var(--muted); font-size:11px; letter-spacing:2px; text-transform:uppercase; margin-top:6px;">Грузоподъёмность</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- МАТЕРИАЛ -->
+<section style="background:var(--dark); padding:80px 80px;">
+  <div class="section-tag">Материал</div>
+  <h2 class="section-title">ПОЧЕМУ<br><span style="color:var(--amber)">ПНД 8 мм</span></h2>
+  <p class="section-desc">Не тонкостенный профиль, не листовой алюминий — цельный полиэтилен низкого давления</p>
+  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:24px; margin-top:48px;">
+    <div style="border:1px solid var(--border); padding:32px;">
+      <div style="color:var(--amber); font-family:var(--font-display); font-size:36px; margin-bottom:12px;">−60°C</div>
+      <div style="color:var(--white); font-weight:600; margin-bottom:8px;">Морозостойкость</div>
+      <div style="color:var(--muted); font-size:14px; line-height:1.7;">ПНД не трескается на морозе. Можно хранить на улице зимой без укрытия — материал переносит циклы заморозки без последствий.</div>
+    </div>
+    <div style="border:1px solid var(--border); padding:32px;">
+      <div style="color:var(--amber); font-family:var(--font-display); font-size:36px; margin-bottom:12px;">≈15 лет</div>
+      <div style="color:var(--white); font-weight:600; margin-bottom:8px;">Срок службы</div>
+      <div style="color:var(--muted); font-size:14px; line-height:1.7;">Полиэтилен не ржавеет, не гниёт, не впитывает воду. Ни у металла, ни у дерева такого нет при одинаковом уходе.</div>
+    </div>
+    <div style="border:1px solid var(--border); padding:32px;">
+      <div style="color:var(--amber); font-family:var(--font-display); font-size:36px; margin-bottom:12px;">~60 кг</div>
+      <div style="color:var(--white); font-weight:600; margin-bottom:8px;">Вес корпуса</div>
+      <div style="color:var(--muted); font-size:14px; line-height:1.7;">Лёгкий корпус — меньше расход топлива, проще спуск и подъём в одиночку, подходит для мотора от 5 л.с.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ДОРАБОТКИ -->
+<section style="background:var(--black); padding:80px 80px;">
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center;">
+    <div>
+      <div class="section-tag">Индивидуально</div>
+      <h2 class="section-title">ДОРАБОТКИ<br><span style="color:var(--amber)">ПОД ВАС</span></h2>
+      <p style="color:var(--muted); line-height:1.8; margin-bottom:32px;">Мы производители, а не перекупы. Поэтому можем изменить лодку под ваши задачи ещё на этапе сборки — без доплат за «нестандарт».</p>
+      <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:16px;">
+        <li style="display:flex; gap:16px; align-items:flex-start;">
+          <span style="color:var(--amber); font-size:18px; flex-shrink:0; line-height:1.4;">→</span>
+          <span style="color:var(--muted); font-size:14px;">Размер транца под ваш мотор</span>
+        </li>
+        <li style="display:flex; gap:16px; align-items:flex-start;">
+          <span style="color:var(--amber); font-size:18px; flex-shrink:0; line-height:1.4;">→</span>
+          <span style="color:var(--muted); font-size:14px;">Дополнительные крепления, рым-болты, утки</span>
+        </li>
+        <li style="display:flex; gap:16px; align-items:flex-start;">
+          <span style="color:var(--amber); font-size:18px; flex-shrink:0; line-height:1.4;">→</span>
+          <span style="color:var(--muted); font-size:14px;">Выбор цвета ПНД при наличии на складе</span>
+        </li>
+        <li style="display:flex; gap:16px; align-items:flex-start;">
+          <span style="color:var(--amber); font-size:18px; flex-shrink:0; line-height:1.4;">→</span>
+          <span style="color:var(--muted); font-size:14px;">Носовой рундук или дополнительные банки</span>
+        </li>
+      </ul>
+    </div>
+    <div style="background:var(--surface); padding:48px; border:1px solid var(--border);">
+      <div style="font-family:var(--font-display); font-size:20px; letter-spacing:2px; color:var(--white); margin-bottom:24px;">ОБСУДИТЬ ЗАКАЗ</div>
+      <p style="color:var(--muted); font-size:14px; line-height:1.8; margin-bottom:32px;">Расскажите под какой водоём и задачи берёте лодку — подберём комплектацию и обсудим доработки.</p>
+      <a href="tel:{{ site.phone }}" class="btn-primary" style="display:block; text-align:center; margin-bottom:16px;">{{ site.phoneDisplay }}</a>
+      <a href="/#order" class="btn-ghost" style="display:block; text-align:center;">Оставить заявку</a>
+    </div>
+  </div>
+</section>
+
+<!-- ССЫЛКИ -->
+<section style="background:var(--dark); padding:60px 80px;">
+  <div class="section-tag">Читайте также</div>
+  <h2 class="section-title" style="font-size:clamp(28px,3vw,42px); margin-bottom:40px;">О МАТЕРИАЛЕ И ЛОДКЕ</h2>
+  <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px;">
+    <a href="/blog/articles/chto-takoe-pnd-plastik/" style="text-decoration:none; border:1px solid var(--border); padding:28px; display:block; transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--amber)'" onmouseout="this.style.borderColor='var(--border)'">
+      <div style="color:var(--amber); font-size:11px; letter-spacing:3px; text-transform:uppercase; margin-bottom:12px;">Материал</div>
+      <div style="color:var(--white); font-weight:600; line-height:1.4; margin-bottom:12px;">Что такое ПНД-пластик и почему из него делают лодки</div>
+      <div style="color:var(--amber); font-size:13px;">Читать →</div>
+    </a>
+    <a href="/blog/articles/plyusy-i-minusy-lodok-iz-pnd/" style="text-decoration:none; border:1px solid var(--border); padding:28px; display:block; transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--amber)'" onmouseout="this.style.borderColor='var(--border)'">
+      <div style="color:var(--amber); font-size:11px; letter-spacing:3px; text-transform:uppercase; margin-bottom:12px;">Разбор</div>
+      <div style="color:var(--white); font-weight:600; line-height:1.4; margin-bottom:12px;">Плюсы и минусы лодок из ПНД — честный разбор</div>
+      <div style="color:var(--amber); font-size:13px;">Читать →</div>
+    </a>
+    <a href="/blog/articles/kak-vybrat-lodku-iz-pnd/" style="text-decoration:none; border:1px solid var(--border); padding:28px; display:block; transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--amber)'" onmouseout="this.style.borderColor='var(--border)'">
+      <div style="color:var(--amber); font-size:11px; letter-spacing:3px; text-transform:uppercase; margin-bottom:12px;">Совет</div>
+      <div style="color:var(--white); font-weight:600; line-height:1.4; margin-bottom:12px;">Как выбрать лодку из ПНД: советы производителя</div>
+      <div style="color:var(--amber); font-size:13px;">Читать →</div>
+    </a>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox()">×</button>
+  <button class="lightbox-prev" onclick="event.stopPropagation();prevPhoto()">‹</button>
+  <img id="lightbox-img" src="" alt="">
+  <button class="lightbox-next" onclick="event.stopPropagation();nextPhoto()">›</button>
+</div>

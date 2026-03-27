@@ -87,5 +87,6 @@ tags:
 - [Пластиковая лодка для рыбалки: какой материал выбрать](/blog/articles/plastikovaya-lodka-dlya-rybalki/)
 - [Как выбрать лодку из ПНД: советы производителя](/blog/articles/kak-vybrat-lodku-iz-pnd/)
 - [Противоударность ПНД: почему лодку из полиэтилена нельзя пробить](/blog/articles/protivodarnost-pnd/)
+- [Как мы делаем лодки: производство ЛОСЬ 400 в Вологде](/proizvodstvo/)
 
 [Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)
