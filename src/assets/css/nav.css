@@ -52,16 +52,16 @@ nav {
 
 .nav-links {
   display: flex;
-  gap: 36px;
+  gap: 20px;
   list-style: none;
 }
 
 .nav-links a {
   color: var(--muted);
   text-decoration: none;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   transition: color 0.2s;
 }
@@ -73,8 +73,9 @@ nav {
 .nav-cta {
   background: var(--amber);
   color: #0a0a0a !important;
-  padding: 10px 24px;
+  padding: 10px 16px;
   font-weight: 700 !important;
+  white-space: nowrap;
   transition: background 0.2s !important;
 }
 
