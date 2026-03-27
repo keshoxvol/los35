@@ -2,17 +2,15 @@
 footer {
   background: #111214;
   border-top: 1px solid #2a2d32;
-  padding: 56px 80px 40px;
-}
-
-.footer-inner {
-  display: grid;
-  grid-template-columns: 220px 1fr auto;
-  gap: 60px;
-  align-items: start;
+  padding: 40px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 .footer-brand-col {
+  flex: 0 0 200px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -27,7 +25,10 @@ footer {
   margin-bottom: 16px;
 }
 
-.footer-nav-col {}
+.footer-nav-col {
+  flex: 1;
+  min-width: 0;
+}
 
 .footer-nav {
   display: grid;
@@ -49,6 +50,7 @@ footer {
 }
 
 .footer-social-col {
+  flex: 0 0 auto;
   min-width: 140px;
 }
 
@@ -138,9 +140,10 @@ footer {
 
 /* Соцсети */
 .socials {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px 12px;
   align-items: center;
-  gap: 16px;
 }
 
 .social-link {
