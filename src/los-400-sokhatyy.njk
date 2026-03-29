@@ -14,6 +14,7 @@ schema: |
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Лодка ЛОСЬ 400 Сохатый",
+    "image": "https://xn--35-4lcmp0e.xn--p1ai/img/sokhatyy/sokhatyy-1.png",
     "description": "Моторная лодка с закрытой рубкой из ПНД-пластика. Грузоподъёмность 300 кг, 4 человека, мотор до 9,9 л.с., скорость до 50 км/ч. Производство Вологда.",
     "brand": { "@type": "Brand", "name": "ЛОСЬ 400" },
     "manufacturer": {
@@ -27,7 +28,22 @@ schema: |
       "price": "180000",
       "priceCurrency": "RUB",
       "availability": "https://schema.org/PreOrder",
-      "seller": { "@type": "Organization", "name": "ООО «Вологодский Судостроительный Завод»" }
+      "seller": { "@type": "Organization", "name": "ООО «Вологодский Судостроительный Завод»" },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": { "@type": "MonetaryAmount", "currency": "RUB" },
+        "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "RU" },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY" },
+          "transitTime": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 7, "unitCode": "DAY" }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "RU",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+      }
     },
     "warranty": "36 месяцев на корпус и сварные швы",
     "aggregateRating": {
@@ -98,6 +114,16 @@ pageJs: []
         <li>Остаток 70% — в день получения до передачи лодки</li>
         <li>Самовывоз с производства, г. Вологда, район Емельяново</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- PHOTOS -->
+  <section>
+    <div class="section-tag">Фото</div>
+    <h2 class="section-title">КАК ОНА<br>ВЫГЛЯДИТ</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:900px;margin:0 auto;">
+      <img src="/img/sokhatyy/sokhatyy-1.png" alt="Лодка ЛОСЬ 400 Сохатый — вид сбоку" style="width:100%;border-radius:8px;display:block;">
+      <img src="/img/sokhatyy/sokhatyy-2.png" alt="Лодка ЛОСЬ 400 Сохатый — закрытая рубка" style="width:100%;border-radius:8px;display:block;">
     </div>
   </section>
 

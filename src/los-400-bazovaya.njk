@@ -14,6 +14,7 @@ schema: |
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Лодка ЛОСЬ 400 Базовая",
+    "image": "https://xn--35-4lcmp0e.xn--p1ai/img/basic/basic-1.jpg",
     "description": "Моторная лодка открытого типа из ПНД-пластика. Грузоподъёмность 350 кг, 4 человека, мотор до 9,9 л.с. Регистрация в ГИМС не нужна. Производство Вологда.",
     "brand": { "@type": "Brand", "name": "ЛОСЬ 400" },
     "manufacturer": {
@@ -27,7 +28,22 @@ schema: |
       "price": "140000",
       "priceCurrency": "RUB",
       "availability": "https://schema.org/InStock",
-      "seller": { "@type": "Organization", "name": "ООО «Вологодский Судостроительный Завод»" }
+      "seller": { "@type": "Organization", "name": "ООО «Вологодский Судостроительный Завод»" },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": { "@type": "MonetaryAmount", "currency": "RUB" },
+        "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "RU" },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY" },
+          "transitTime": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 7, "unitCode": "DAY" }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "RU",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+      }
     },
     "warranty": "36 месяцев на корпус и сварные швы",
     "aggregateRating": {
@@ -83,6 +99,18 @@ pageJs: []
         <div class="badge">ГИМС <strong>не нужна</strong></div>
         <div class="badge">Производство <strong>Вологда</strong></div>
       </div>
+    </div>
+  </section>
+
+  <!-- PHOTOS -->
+  <section>
+    <div class="section-tag">Фото</div>
+    <h2 class="section-title">КАК ОНА<br>ВЫГЛЯДИТ</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:900px;margin:0 auto;">
+      <img src="/img/basic/basic-1.jpg" alt="Лодка ЛОСЬ 400 Базовая — фото 1" style="width:100%;border-radius:8px;display:block;">
+      <img src="/img/basic/basic-2.jpg" alt="Лодка ЛОСЬ 400 Базовая — фото 2" style="width:100%;border-radius:8px;display:block;">
+      <img src="/img/basic/basic-3.jpg" alt="Лодка ЛОСЬ 400 Базовая — фото 3" style="width:100%;border-radius:8px;display:block;">
+      <img src="/img/basic/basic-4.jpg" alt="Лодка ЛОСЬ 400 Базовая — фото 4" style="width:100%;border-radius:8px;display:block;">
     </div>
   </section>
 
