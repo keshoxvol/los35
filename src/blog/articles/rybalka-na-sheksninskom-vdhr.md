@@ -72,10 +72,10 @@ tags:
 
 ## Читайте также
 
+- [Маршруты по Шекснинскому водохранилищу на лодке](/blog/articles/marshruty-sheksninskoe-vodokhranilishche/)
+- [Рыбалка в Шексне весной: открытие сезона](/blog/articles/rybalka-sheksna-vesna/)
+- [Какую лодку выбрать для Шекснинского водохранилища](/blog/articles/kakuyu-lodku-dlya-sheksny/)
 - [Купить лодку в Шексне: доставка ЛОСЬ 400](/blog/articles/kupit-lodku-v-sheksne/)
-- [Купить лодку в Череповце: доставка ЛОСЬ 400](/blog/articles/kupit-lodku-v-cherepovce/)
-- [Лучшие реки Вологодской области для рыбалки с лодкой](/blog/articles/luchshie-reki-vologodskoy/)
-- [Рыбалка на Белом озере](/blog/articles/rybalka-na-belom-ozere/)
 - [Что взять на рыбалку с лодки: чек-лист](/blog/articles/chto-vzyat-na-rybalku-checklist/)
 
 [Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

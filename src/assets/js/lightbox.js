@@ -1,9 +1,15 @@
 const photos = window.GALLERY_PHOTOS || [];
 let currentPhoto = 0;
 
+function setPhoto(index) {
+  const img = document.getElementById('lightbox-img');
+  img.src = '/img/' + photos[index].src;
+  img.alt = photos[index].alt || '';
+}
+
 function openLightbox(index) {
   currentPhoto = index;
-  document.getElementById('lightbox-img').src = '/img/' + photos[index];
+  setPhoto(index);
   document.getElementById('lightbox').classList.add('active');
   document.body.style.overflow = 'hidden';
 }
@@ -17,12 +23,12 @@ function closeLightbox(e) {
 
 function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + photos.length) % photos.length;
-  document.getElementById('lightbox-img').src = '/img/' + photos[currentPhoto];
+  setPhoto(currentPhoto);
 }
 
 function nextPhoto() {
   currentPhoto = (currentPhoto + 1) % photos.length;
-  document.getElementById('lightbox-img').src = '/img/' + photos[currentPhoto];
+  setPhoto(currentPhoto);
 }
 
 document.addEventListener('keydown', e => {

@@ -68,9 +68,9 @@ tags:
 
 ## Читайте также
 
+- [Почему ПНД — лучший материал для мелководных рек](/blog/articles/pnd-dlya-melkovodnykh-rek/)
+- [Рыбалка на реке Вологда: места, рыба, особенности](/blog/articles/rybalka-na-reke-vologda/)
 - [Лучшие реки Вологодской области для рыбалки с лодкой](/blog/articles/luchshie-reki-vologodskoy/)
-- [Рыбалка в Вологодском районе: ближние водоёмы](/blog/articles/rybalka-vologodskiy-rayon/)
-- [Рыбалка на Кубенском озере](/blog/articles/rybalka-na-kubenskom-ozere/)
 - [Что взять на рыбалку с лодки: чек-лист](/blog/articles/chto-vzyat-na-rybalku-checklist/)
 
 [Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

@@ -66,7 +66,7 @@ tags:
 
 - [Рыбалка в Ярославской области](/blog/articles/rybalka-yaroslavskaya-oblast/)
 - [Рыбалка на Рыбинском водохранилище](/blog/articles/rybalka-na-rybinskom-vdhr/)
+- [Купить лодку в Ярославле: доставка ЛОСЬ 400](/blog/articles/kupit-lodku-v-yaroslavle/)
 - [Что взять на рыбалку с лодки: чек-лист](/blog/articles/chto-vzyat-na-rybalku-checklist/)
-- [Как выбрать эхолот для рыбалки с лодки](/blog/articles/kak-vybrat-ekholot/)
 
-[Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)
+[Купить лодку с доставкой в Ярославль →](/yaroslavl/)
