@@ -175,6 +175,16 @@
   background: var(--surface);
 }
 
+/* Фото в статье */
+.blog-post-body img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  margin: 28px 0;
+}
+
 /* Кнопка-ссылка в конце статьи */
 .blog-post-body .btn-primary {
   display: inline-block;
