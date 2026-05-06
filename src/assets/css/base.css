@@ -63,23 +63,3 @@ body::before {
   white-space: nowrap;
 }
 
-/* ── Consent checkbox in lead form ── */
-.lead-form-consent {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  font-family: var(--font-body);
-  font-size: 13px;
-  color: var(--muted);
-  cursor: pointer;
-  margin-bottom: 4px;
-}
-.lead-form-consent input[type="checkbox"] {
-  margin-top: 2px;
-  accent-color: var(--amber);
-  width: 15px;
-  height: 15px;
-  flex-shrink: 0;
-  cursor: pointer;
-}
-.lead-form-consent a { color: var(--amber); text-decoration: underline; }
