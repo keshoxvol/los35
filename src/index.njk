@@ -90,14 +90,12 @@ pageCss:
   - /assets/css/home/geo.css
   - /assets/css/home/gallery.css
   - /assets/css/home/faq.css
-  - /assets/css/home/lead-form.css
   - /assets/css/home/cta.css
   - /assets/css/home/contact.css
 pageJs:
   - /assets/js/counter.js
   - /assets/js/lightbox.js
   - /assets/js/faq.js
-  - /assets/js/lead-form.js
 ---
 
 <script>
@@ -495,38 +493,6 @@ pageJs:
     <p style="text-align:center;margin-top:24px;">
       <a href="/blog/" style="color:var(--muted);font-size:14px;">Все статьи →</a>
     </p>
-  </section>
-
-  <!-- LEAD FORM -->
-  <section class="lead-form-section" id="order">
-    <div class="lead-form-inner">
-      <div class="section-tag">Заявка</div>
-      <h2 class="section-title">ОСТАВИТЬ<br>ЗАЯВКУ</h2>
-      <p class="section-desc" style="margin-top:12px;">Перезвоним в течение дня — ответим на вопросы по комплектации, срокам и доставке.</p>
-      <form class="lead-form" id="leadForm">
-        <div class="lead-form-row">
-          <input type="text" id="lf-name" placeholder="Ваше имя" required>
-          <input type="tel" id="lf-phone" placeholder="Номер телефона" required>
-        </div>
-        <select id="lf-model">
-          <option value="">Интересующая модель (необязательно)</option>
-          <option value="ЛОСЬ 400 — базовая (140 000 ₽)">ЛОСЬ 400 — базовая (140 000 ₽)</option>
-          <option value="ЛОСЬ 400 Сохатый — с рубкой (180 000 ₽)">ЛОСЬ 400 Сохатый — с рубкой (180 000 ₽)</option>
-          <option value="Не определился">Не определился</option>
-        </select>
-        <textarea id="lf-comment" placeholder="Вопрос или комментарий (необязательно)"></textarea>
-        <label class="lead-form-consent">
-          <input type="checkbox" id="lf-consent" required>
-          <span>Я согласен на <a href="/privacy/" target="_blank">обработку персональных данных</a></span>
-        </label>
-        <button type="submit" class="lead-form-submit" id="lf-submit">ОТПРАВИТЬ ЗАЯВКУ</button>
-        <p class="lead-form-error" id="lf-error">Что-то пошло не так. Позвоните нам напрямую: {{ site.phoneDisplay }}</p>
-      </form>
-      <div class="lead-form-success" id="lf-success">
-        ✓ Заявка принята!<br>
-        <span style="font-family:var(--font-body);font-size:15px;color:var(--muted);font-weight:400;">Перезвоним вам в ближайшее время.</span>
-      </div>
-    </div>
   </section>
 
   <!-- CTA -->
