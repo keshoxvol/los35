@@ -166,5 +166,7 @@ tags:
 - [С надувной на твёрдый корпус: когда это оправдано](/blog/articles/ot-naduvnoy-k-tverdomu-korpusu/)
 - [Как выбрать лодку из ПНД](/blog/articles/kak-vybrat-lodku-iz-pnd/)
 - [Лодка ПНД под мотор: какую мощность ставить](/blog/articles/pnd-lodka-pod-motor/)
+- [Как оценивать лодку из ПНД перед покупкой: чек-лист](/blog/articles/kak-ocenivat-lodku-iz-pnd/)
+- [Обзор ЛОСЬ 400 Базовая: характеристики, комплектация, кому подходит](/blog/articles/obzor-los-400-bazovaya/)
 
 [Посмотреть ЛОСЬ 400 Базовая — характеристики и цена →](/los-400-bazovaya/)

@@ -50,5 +50,6 @@ tags:
 - [Лодка без регистрации в ГИМС](/blog/articles/lodka-bez-registracii-gims/)
 - [Как выбрать лодку из ПНД](/blog/articles/kak-vybrat-lodku-iz-pnd/)
 - [Консольный катер из ПНД: чем отличается от каютного и от лодки](/blog/articles/kater-iz-pnd/)
+- [Видео: ЛОСЬ 400 на полном газу на реке Вологда](/blog/articles/video-los-400-reka-vologda/)
 
 [Посмотреть ЛОСЬ 400 Базовая — характеристики и цена →](/los-400-bazovaya/)

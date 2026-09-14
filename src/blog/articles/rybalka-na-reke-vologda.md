@@ -68,5 +68,6 @@ tags:
 - [Рыбалка в Вологодском районе: ближние водоёмы](/blog/articles/rybalka-vologodskiy-rayon/)
 - [Рыбалка на Кубенском озере](/blog/articles/rybalka-na-kubenskom-ozere/)
 - [Что взять на рыбалку с лодки: чек-лист](/blog/articles/chto-vzyat-na-rybalku-checklist/)
+- [Видео: ЛОСЬ 400 на полном газу на реке Вологда](/blog/articles/video-los-400-reka-vologda/)
 
 [ЛОСЬ 400 в Вологде — купить от производителя →](/vologda/)

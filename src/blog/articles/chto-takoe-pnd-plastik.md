@@ -62,6 +62,7 @@ tags:
 - [Противоударность ПНД: почему лодку из полиэтилена нельзя пробить](/blog/articles/protivodarnost-pnd/)
 - [Как выбрать лодку из ПНД: советы производителя](/blog/articles/kak-vybrat-lodku-iz-pnd/)
 - [Как мы делаем лодки: производство ЛОСЬ 400 в Вологде](/proizvodstvo/)
+- [Как сделать лодку из ПНД своими руками: что нужно знать](/blog/articles/kak-sdelat-lodku-iz-pnd-svoimi-rukami/)
 - [ЛОСЬ 400 в Няндоме: доставка в Архангельскую область](/blog/articles/los-400-dostavka-nyandoma/)
 
 [Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)
