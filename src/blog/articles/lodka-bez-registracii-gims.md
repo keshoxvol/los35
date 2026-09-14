@@ -66,6 +66,7 @@ tags:
 
 - [Как выбрать лодку из ПНД: советы производителя](/blog/articles/kak-vybrat-lodku-iz-pnd/)
 - [Какой мотор выбрать для лодки 4 метра](/blog/articles/kakoy-motor-dlya-lodki-4-metra/)
+- [Лодка ПНД под мотор: какую мощность ставить](/blog/articles/pnd-lodka-pod-motor/)
 - [Как выбрать прицеп для лодки](/blog/articles/kak-vybrat-pricep-dlya-lodki/)
 - [Первый выезд на моторной лодке](/blog/articles/pervyy-vyyezd-na-motornoy-lodke/)
 

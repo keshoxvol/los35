@@ -75,6 +75,7 @@ tags:
 ## Читайте также
 
 - [Лодка без регистрации в ГИМС: что разрешено в 2025 году](/blog/articles/lodka-bez-registracii-gims/)
+- [Лодка ПНД под мотор: какую мощность ставить](/blog/articles/pnd-lodka-pod-motor/)
 - [Как выбрать прицеп для лодки](/blog/articles/kak-vybrat-pricep-dlya-lodki/)
 - [Первый выезд на моторной лодке](/blog/articles/pervyy-vyyezd-na-motornoy-lodke/)
 - [Как спустить лодку на воду в одиночку](/blog/articles/kak-spustit-lodku-v-odinochku/)
