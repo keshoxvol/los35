@@ -73,6 +73,6 @@ tags:
 - [Рыбалка на Рыбинском водохранилище](/blog/articles/rybalka-na-rybinskom-vdhr/)
 - [Что взять на рыбалку с лодки: чек-лист](/blog/articles/chto-vzyat-na-rybalku-checklist/)
 - [Как выбрать лодку из ПНД: советы производителя](/blog/articles/kak-vybrat-lodku-iz-pnd/)
-- [Рыбалка на водоёмах Костромской области](/blog/articles/rybalka-na-vodoemakh-kostromы/)
+- [Рыбалка на водоёмах Костромской области](/blog/articles/rybalka-na-vodoemakh-kostromy/)
 
 [Купить лодку с доставкой в Иваново →](/ivanovo/)

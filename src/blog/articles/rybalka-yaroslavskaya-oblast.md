@@ -65,7 +65,7 @@ tags:
 
 - [Рыбалка на Волге в Ярославской области](/blog/articles/rybalka-yaroslavl-volga/)
 - [Рыбалка на Рыбинском водохранилище](/blog/articles/rybalka-na-rybinskom-vdhr/)
-- [Рыбалка на водоёмах Костромской области](/blog/articles/rybalka-na-vodoemakh-kostromы/)
+- [Рыбалка на водоёмах Костромской области](/blog/articles/rybalka-na-vodoemakh-kostromy/)
 - [Рыбалка в Ивановской области](/blog/articles/rybalka-na-vodoemakh-ivanovo/)
 - [Что взять на рыбалку с лодки: чек-лист](/blog/articles/chto-vzyat-na-rybalku-checklist/)
 

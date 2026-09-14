@@ -66,7 +66,7 @@ tags:
 
 - [Рыбалка в Ярославской области](/blog/articles/rybalka-yaroslavskaya-oblast/)
 - [Рыбалка на Рыбинском водохранилище](/blog/articles/rybalka-na-rybinskom-vdhr/)
-- [Рыбалка на водоёмах Костромской области](/blog/articles/rybalka-na-vodoemakh-kostromы/)
+- [Рыбалка на водоёмах Костромской области](/blog/articles/rybalka-na-vodoemakh-kostromy/)
 - [Что взять на рыбалку с лодки: чек-лист](/blog/articles/chto-vzyat-na-rybalku-checklist/)
 
 [Купить лодку с доставкой в Ярославль →](/yaroslavl/)
