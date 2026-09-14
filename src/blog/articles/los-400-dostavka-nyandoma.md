@@ -66,6 +66,7 @@ ogImage: /img/niandoma/los-400-nyandoma-1.jpg
 
 - [Лодка из ПНД или алюминиевая: что лучше для рыбалки](/blog/articles/pnd-vs-alyuminiy/)
 - [Что такое ПНД-пластик и почему из него делают лодки](/blog/articles/chto-takoe-pnd-plastik/)
+- [Видеообзор ЛОСЬ 400 в сером цвете](/blog/articles/obzor-los-400-seryy/)
 - [Доставка лодок по России](/dostavka/)
 
 [Посмотреть ЛОСЬ 400 →](/los-400-sokhatyy/)

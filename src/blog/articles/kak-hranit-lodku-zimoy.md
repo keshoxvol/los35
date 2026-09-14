@@ -88,5 +88,6 @@ tags:
 - [Как выбрать прицеп для лодки](/blog/articles/kak-vybrat-pricep-dlya-lodki/)
 - [Какой мотор выбрать для лодки 4 метра](/blog/articles/kakoy-motor-dlya-lodki-4-metra/)
 - [Как выбрать лодку из ПНД: советы производителя](/blog/articles/kak-vybrat-lodku-iz-pnd/)
+- [Жор щуки перед ледоставом: последний выезд на лодке в сезоне](/blog/articles/zhor-shchuki-pered-ledostavom/)
 
 [Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

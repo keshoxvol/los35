@@ -75,5 +75,6 @@ tags:
 - [Лодка из ПНД или алюминиевая: что лучше для рыбалки](/blog/articles/pnd-vs-alyuminiy/)
 - [Почему ПНД — лучший материал для мелководных рек](/blog/articles/pnd-dlya-melkovodnykh-rek/)
 - [Как выбрать лодку из ПНД: советы производителя](/blog/articles/kak-vybrat-lodku-iz-pnd/)
+- [Жор щуки перед ледоставом: последний выезд на лодке в сезоне](/blog/articles/zhor-shchuki-pered-ledostavom/)
 
 [Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)

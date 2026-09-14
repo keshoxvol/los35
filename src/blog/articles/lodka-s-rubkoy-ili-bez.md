@@ -72,6 +72,7 @@ tags:
 - [Отдых с детьми на лодке](/blog/articles/otdykh-s-detmi-na-lodke/)
 - [Лодка для рыбалки или охоты: в чём разница](/blog/articles/lodka-dlya-rybalki-ili-ohoty/)
 - [Как правильно распределить нагрузку в лодке](/blog/articles/kak-raspredelit-nagruzku-v-lodke/)
+- [Консольный катер из ПНД: чем отличается от каютного и от лодки](/blog/articles/kater-iz-pnd/)
 
 [Посмотреть ЛОСЬ 400 Сохатый с рубкой →](/los-400-sokhatyy/)\
 [Посмотреть ЛОСЬ 400 Базовая →](/los-400-bazovaya/)
